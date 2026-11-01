@@ -29,7 +29,7 @@ export function ProductCard({
 }) {
   return (
     <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-brand-900/8 bg-white shadow-sm shadow-black/[0.03] transition-colors duration-300 hover:border-accent-200">
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-50">
+      <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-brand-50">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={image}
@@ -37,7 +37,9 @@ export function ProductCard({
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
-        <div className="absolute -bottom-6 start-6 flex size-12 items-center justify-center rounded-xl border border-brand-900/8 bg-white text-brand-800 shadow-sm">
+      </div>
+      <div className="relative">
+        <div className="absolute -top-6 start-6 z-10 flex size-12 items-center justify-center rounded-xl border border-brand-900/8 bg-white text-brand-800 shadow-sm">
           <Icon name={icon} className="size-6" />
         </div>
       </div>
