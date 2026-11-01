@@ -91,6 +91,7 @@ export interface Dictionary {
     ctaQuote: string;
     otherProductsTitle: string;
     brochureLabel: string;
+    viewLiveLabel: string;
   };
   consultingPage: {
     hero: { eyebrow: string; title: string; subtitle: string; ctaPrimary: string; ctaSecondary: string };

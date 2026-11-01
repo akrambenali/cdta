@@ -320,6 +320,237 @@ const fr: Dictionary = {
         ],
       },
     },
+    vola: {
+      title: "Vôla — Gestion d'auto-école",
+      tagline: "Toute votre auto-école, organisée au même endroit",
+      shortDescription:
+        "Plateforme de gestion pour auto-écoles : élèves, moniteurs, plannings de leçons et suivi administratif centralisés.",
+      features: [
+        "Gestion des élèves et de leurs dossiers",
+        "Planification des leçons de conduite et des moniteurs",
+        "Suivi de la progression et des examens",
+        "Tableau de bord pour piloter l'activité de l'auto-école",
+      ],
+      priceLabel: "Bientôt disponible",
+      priceNote: "Produit en cours de finalisation",
+      detail: {
+        intro:
+          "Vôla est une plateforme pensée pour simplifier la gestion quotidienne des auto-écoles : inscription des élèves, planification des leçons, suivi des moniteurs et des examens, réunis dans un seul outil.",
+        benefits: [
+          {
+            title: "Planning centralisé",
+            description: "Organisez les leçons et la disponibilité des moniteurs sans superposition ni erreur.",
+          },
+          {
+            title: "Suivi des élèves",
+            description: "Gardez une vue claire sur la progression de chaque élève, de l'inscription à l'examen.",
+          },
+          {
+            title: "Gain de temps administratif",
+            description: "Moins de paperasse, plus de temps consacré à l'enseignement.",
+          },
+        ],
+        forWho: "Auto-écoles souhaitant digitaliser la gestion de leurs élèves, moniteurs et plannings de leçons.",
+        includes: [
+          "Paramétrage selon le fonctionnement de votre auto-école",
+          "Formation de l'équipe",
+          "Support technique et évolutions",
+        ],
+      },
+    },
+    maqam: {
+      title: "MAQAM — Gestion hôtelière",
+      tagline: "Pilotez votre hôtel depuis un seul portail",
+      shortDescription:
+        "Plateforme de gestion hôtelière : réservations, chambres et séjours centralisés pour un pilotage simplifié de votre établissement.",
+      features: [
+        "Gestion des réservations et des disponibilités",
+        "Suivi des chambres et des séjours",
+        "Portail accessible en ligne",
+        "Vue d'ensemble de l'activité de l'hôtel",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon la taille de l'établissement",
+      detail: {
+        intro:
+          "MAQAM est une plateforme de gestion hôtelière conçue pour centraliser les réservations, le suivi des chambres et le pilotage quotidien de l'établissement dans un portail accessible en ligne.",
+        benefits: [
+          {
+            title: "Réservations centralisées",
+            description: "Suivez les disponibilités et les réservations en un seul endroit, sans double réservation.",
+          },
+          {
+            title: "Portail accessible partout",
+            description: "Gérez votre hôtel depuis un navigateur, où que vous soyez.",
+          },
+          {
+            title: "Vision claire de l'activité",
+            description: "Un tableau de bord pour suivre l'occupation et l'activité de l'établissement.",
+          },
+        ],
+        forWho: "Hôtels et établissements d'hébergement souhaitant digitaliser la gestion de leurs réservations et de leurs chambres.",
+        includes: ["Paramétrage de l'établissement", "Formation de l'équipe", "Support technique et évolutions"],
+      },
+    },
+    rihla: {
+      title: "RIHLA — Gestion d'agence de voyage",
+      tagline: "Voyages, tourisme, Hajj et Omra, organisés simplement",
+      shortDescription: "Plateforme pour agences de voyage et de tourisme, incluant la gestion des offres Hajj et Omra.",
+      features: [
+        "Gestion des offres et séjours",
+        "Organisation des programmes Hajj et Omra",
+        "Suivi des réservations clients",
+        "Plateforme accessible en ligne",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon les besoins de votre agence",
+      detail: {
+        intro:
+          "RIHLA est une plateforme dédiée aux agences de voyage et de tourisme, pensée pour organiser les offres, les séjours et les programmes spécifiques comme le Hajj et la Omra.",
+        benefits: [
+          {
+            title: "Offres organisées",
+            description: "Présentez et gérez vos séjours et programmes de voyage depuis une plateforme claire.",
+          },
+          { title: "Programmes Hajj et Omra", description: "Une gestion adaptée aux spécificités des voyages religieux." },
+          { title: "Suivi des réservations", description: "Centralisez le suivi de vos clients et de leurs réservations." },
+        ],
+        forWho: "Agences de voyage et de tourisme, notamment celles organisant des programmes Hajj et Omra.",
+        includes: [
+          "Paramétrage de la plateforme selon votre agence",
+          "Formation de l'équipe",
+          "Support technique et évolutions",
+        ],
+      },
+    },
+    "mamlakat-al-hijab": {
+      title: "Mamlakat Al-Hijab — Boutique en ligne",
+      tagline: "Une boutique en ligne dédiée à la mode et au hijab",
+      shortDescription: "Boutique en ligne pour la vente de hijabs et de produits de mode, réalisée pour un client.",
+      features: [
+        "Catalogue produits en ligne",
+        "Panier et tunnel de commande",
+        "Présentation soignée des produits",
+        "Boutique accessible sur mobile et ordinateur",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon votre projet de boutique en ligne",
+      detail: {
+        intro:
+          "Mamlakat Al-Hijab est une boutique en ligne développée pour la vente de hijabs et de produits de mode, avec un catalogue clair et une expérience d'achat soignée.",
+        benefits: [
+          { title: "Présentation soignée", description: "Un catalogue produits pensé pour mettre en valeur les articles de mode." },
+          { title: "Expérience d'achat fluide", description: "Du catalogue au panier, un parcours simple pour les clientes." },
+          { title: "Accessible partout", description: "Une boutique qui s'adapte au mobile comme à l'ordinateur." },
+        ],
+        forWho: "Commerces et marques de mode et de hijab souhaitant vendre leurs produits en ligne.",
+        includes: ["Mise en place du catalogue produits", "Configuration de la boutique", "Support technique"],
+      },
+    },
+    "computer-store": {
+      title: "Boutique matériel informatique",
+      tagline: "Vente en ligne d'équipements informatiques",
+      shortDescription: "Boutique en ligne pour la vente de matériel et d'équipements informatiques.",
+      features: [
+        "Catalogue de produits informatiques",
+        "Fiches produits détaillées",
+        "Panier et tunnel de commande",
+        "Boutique accessible en ligne",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon votre projet de boutique",
+      detail: {
+        intro:
+          "Boutique en ligne développée pour la vente de matériel informatique, avec un catalogue organisé et des fiches produits claires.",
+        benefits: [
+          { title: "Catalogue organisé", description: "Des produits informatiques présentés de façon claire et structurée." },
+          { title: "Parcours d'achat simple", description: "Du catalogue au panier, une expérience fluide pour les clients." },
+          { title: "Facile à gérer", description: "Un back-office pour ajouter et mettre à jour les produits facilement." },
+        ],
+        forWho: "Commerces de matériel et d'équipements informatiques souhaitant vendre en ligne.",
+        includes: ["Mise en place du catalogue produits", "Configuration de la boutique", "Support technique"],
+      },
+    },
+    "ite-digital-solutions": {
+      title: "ITE Digital Solutions — Site institutionnel",
+      tagline: "Un site vitrine pour la formation et les solutions digitales",
+      shortDescription: "Site web institutionnel présentant les activités de formation et de solutions digitales d'ITE.",
+      features: [
+        "Présentation des activités et services",
+        "Pages dédiées aux formations",
+        "Design professionnel et responsive",
+        "Formulaire de contact intégré",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon le nombre de pages et fonctionnalités",
+      detail: {
+        intro:
+          "Site institutionnel conçu pour présenter les activités de formation et de solutions digitales d'ITE, avec une image professionnelle et une navigation claire.",
+        benefits: [
+          { title: "Image professionnelle", description: "Un site qui reflète le sérieux et l'expertise de l'entreprise." },
+          { title: "Présentation claire des formations", description: "Des pages dédiées pour présenter l'offre de formation." },
+          { title: "Facile à faire évoluer", description: "Ajout de contenus et de pages selon les besoins de l'activité." },
+        ],
+        forWho: "Organismes de formation et entreprises de solutions digitales souhaitant un site institutionnel professionnel.",
+        includes: [
+          "Maquette et validation du design",
+          "Développement et intégration des contenus",
+          "Accompagnement au lancement",
+        ],
+      },
+    },
+    "tourism-algeria": {
+      title: "Tourism Algeria — Plateforme touristique",
+      tagline: "Valoriser et promouvoir le tourisme en Algérie",
+      shortDescription: "Plateforme dédiée au développement et à la promotion du tourisme en Algérie.",
+      features: [
+        "Présentation des destinations touristiques",
+        "Mise en valeur du patrimoine algérien",
+        "Design moderne et accessible",
+        "Plateforme en ligne",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon le périmètre du projet",
+      detail: {
+        intro:
+          "Tourism Algeria est une plateforme conçue pour promouvoir et valoriser les destinations touristiques en Algérie, avec une présentation moderne et accessible.",
+        benefits: [
+          { title: "Mise en valeur du territoire", description: "Une vitrine moderne pour présenter les destinations et le patrimoine algérien." },
+          { title: "Design soigné", description: "Une expérience visuelle agréable pour mettre en avant le tourisme local." },
+          { title: "Accessible à tous", description: "Une plateforme pensée pour informer un large public." },
+        ],
+        forWho: "Acteurs publics ou privés souhaitant développer et promouvoir le tourisme en Algérie.",
+        includes: ["Conception de la plateforme", "Intégration des contenus", "Accompagnement au lancement"],
+      },
+    },
+    enresol: {
+      title: "ENRESOL — Ingénierie & énergie solaire",
+      tagline: "Un site pour une entreprise d'ingénierie et d'énergie solaire",
+      shortDescription: "Site web pour une entreprise d'ingénierie spécialisée dans l'énergie solaire.",
+      features: [
+        "Présentation de l'expertise en ingénierie et énergie solaire",
+        "Mise en avant des projets et services",
+        "Design professionnel et responsive",
+        "Formulaire de contact intégré",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon le nombre de pages et fonctionnalités",
+      detail: {
+        intro:
+          "Site web conçu pour présenter l'activité d'une entreprise d'ingénierie spécialisée dans l'énergie solaire, avec une image professionnelle et des informations claires sur ses services.",
+        benefits: [
+          { title: "Image professionnelle", description: "Un site qui reflète l'expertise technique de l'entreprise." },
+          { title: "Présentation claire des services", description: "Des pages dédiées pour présenter l'activité et les projets." },
+          { title: "Facile à faire évoluer", description: "Ajout de contenus selon les besoins de l'activité." },
+        ],
+        forWho: "Entreprises d'ingénierie et d'énergie souhaitant un site institutionnel professionnel.",
+        includes: [
+          "Maquette et validation du design",
+          "Développement et intégration des contenus",
+          "Accompagnement au lancement",
+        ],
+      },
+    },
   },
   consultingCard: {
     title: "Consulting en transformation digitale",
@@ -347,6 +578,7 @@ const fr: Dictionary = {
     ctaQuote: "Demander un devis",
     otherProductsTitle: "Découvrir d'autres produits",
     brochureLabel: "Télécharger la fiche produit (PDF)",
+    viewLiveLabel: "Voir le site en ligne",
   },
   consultingPage: {
     hero: {
@@ -484,6 +716,14 @@ const fr: Dictionary = {
         { value: "bouchli", label: "BOUCHLI — Gestion de boucheries" },
         { value: "qr-chief", label: "QR-Chief — Générateur de QR codes" },
         { value: "tapsit-school", label: "TAPSIT School — Gestion scolaire" },
+        { value: "vola", label: "Vôla — Gestion d'auto-école" },
+        { value: "maqam", label: "MAQAM — Gestion hôtelière" },
+        { value: "rihla", label: "RIHLA — Gestion d'agence de voyage" },
+        { value: "mamlakat-al-hijab", label: "Mamlakat Al-Hijab — Boutique en ligne" },
+        { value: "computer-store", label: "Boutique matériel informatique" },
+        { value: "ite-digital-solutions", label: "ITE Digital Solutions — Site institutionnel" },
+        { value: "tourism-algeria", label: "Tourism Algeria — Plateforme touristique" },
+        { value: "enresol", label: "ENRESOL — Ingénierie & énergie solaire" },
         { value: "consulting", label: "Consulting en transformation digitale" },
         { value: "autre", label: "Autre / je ne sais pas encore" },
       ],

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Check, FileText } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, FileText, ExternalLink } from "lucide-react";
 import { isLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { productSlugs, productsMeta, type ProductSlug } from "@/data/products-meta";
@@ -81,12 +81,24 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
               <p className="mt-2 text-2xl font-bold text-white">{product.priceLabel}</p>
               <p className="mt-1 text-xs text-white/50">{product.priceNote}</p>
 
+              {meta.demoUrl && (
+                <a
+                  href={meta.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 flex items-center gap-2.5 rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm font-medium text-white/85 transition-colors hover:border-white/30 hover:bg-white/10"
+                >
+                  <ExternalLink className="size-4 shrink-0 text-accent-400" />
+                  <span>{dict.productDetail.viewLiveLabel}</span>
+                </a>
+              )}
+
               {meta.pdf && (
                 <a
                   href={meta.pdf}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 flex items-center gap-2.5 rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm font-medium text-white/85 transition-colors hover:border-white/30 hover:bg-white/10"
+                  className="mt-3 flex items-center gap-2.5 rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm font-medium text-white/85 transition-colors hover:border-white/30 hover:bg-white/10"
                 >
                   <FileText className="size-4 shrink-0 text-accent-400" />
                   <span>{dict.productDetail.brochureLabel}</span>

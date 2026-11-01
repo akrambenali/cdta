@@ -9,6 +9,14 @@ import {
   Beef,
   QrCode,
   GraduationCap,
+  Car,
+  Hotel,
+  Plane,
+  ShoppingBag,
+  Cpu,
+  Building2,
+  MapPin,
+  Sun,
   type LucideProps,
 } from "lucide-react";
 
@@ -23,6 +31,14 @@ export const iconMap = {
   beef: Beef,
   "qr-code": QrCode,
   "graduation-cap": GraduationCap,
+  car: Car,
+  hotel: Hotel,
+  plane: Plane,
+  "shopping-bag": ShoppingBag,
+  cpu: Cpu,
+  "building-2": Building2,
+  "map-pin": MapPin,
+  sun: Sun,
 } as const;
 
 export type IconName = keyof typeof iconMap;
