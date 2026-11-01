@@ -269,6 +269,193 @@ const fr: Dictionary = {
         ],
       },
     },
+    keswa: {
+      title: "KESWA — Gestion de magasins de mode",
+      tagline: "Tout votre magasin de vêtements en un seul endroit",
+      shortDescription:
+        "Logiciel de gestion intégré pour les magasins de mode et de prêt-à-porter : point de vente, stock multi-tailles/couleurs, achats, fournisseurs et rapports.",
+      features: [
+        "Point de vente (POS) rapide avec recherche par nom, code ou code-barres",
+        "Gestion des produits par tailles, couleurs et variantes",
+        "Scan des codes-barres directement depuis la caméra du téléphone",
+        "Suivi des achats, fournisseurs et paiements dus",
+        "Comptes séparés et permissions par rôle (gérant, employé)",
+        "Rapports de ventes, retours et performance du magasin",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon le nombre de points de vente et d'utilisateurs",
+      detail: {
+        intro:
+          "KESWA est un système intelligent et intégré pour la gestion des magasins de vêtements et de mode, conçu pour donner une vision claire et un contrôle complet sur les ventes, le stock, les achats et les finances quotidiennes du magasin.",
+        benefits: [
+          {
+            title: "Pensé pour la mode",
+            description:
+              "Gestion native des tailles, couleurs et modèles, avec code-barres personnalisable par variante.",
+          },
+          {
+            title: "Caisse rapide",
+            description:
+              "Une interface de vente claire pour accélérer le passage en caisse et réduire les erreurs de prix.",
+          },
+          {
+            title: "Stock toujours à jour",
+            description:
+              "Les quantités se mettent à jour automatiquement à chaque vente, retour ou réception de marchandise.",
+          },
+          {
+            title: "Gestion à distance",
+            description:
+              "Suivez les ventes, le stock et les indicateurs de votre magasin depuis votre téléphone, où que vous soyez.",
+          },
+        ],
+        forWho:
+          "Magasins de vêtements femme, homme et enfant, boutiques de jalabiyas et hijabs, et enseignes mode gérant plusieurs tailles, couleurs et modèles.",
+        includes: [
+          "Paramétrage du catalogue et des variantes",
+          "Configuration des rôles et permissions",
+          "Formation de l'équipe en magasin",
+          "Support technique et évolutions",
+        ],
+      },
+    },
+    bouchli: {
+      title: "BOUCHLI — Gestion de boucheries",
+      tagline: "Vente au poids ou à la pièce, sans erreur",
+      shortDescription:
+        "Système tout-en-un pour les boucheries : point de vente, intégration balance électronique, stock, achats et caisse, fonctionnant même sans connexion internet.",
+      features: [
+        "Point de vente avec vente à la pièce ou au poids (kg)",
+        "Intégration directe avec balance électronique (Rongta RLS1000)",
+        "Gestion du stock, des achats et des fournisseurs",
+        "Gestion de la caisse et des dépenses quotidiennes",
+        "Fonctionne hors connexion (Offline First) avec sauvegarde automatique",
+        "Impression de tickets et factures sur imprimante thermique",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon l'équipement (balance, imprimante) et le nombre de postes",
+      detail: {
+        intro:
+          "BOUCHLI est un système métier complet conçu spécifiquement pour les boucheries : il réunit la caisse, les prix, le poids, le code-barres, le stock, les achats et les finances dans une seule interface simple et rapide.",
+        benefits: [
+          {
+            title: "Zéro erreur de pesée",
+            description:
+              "Les prix au kilogramme sont calculés automatiquement depuis la balance connectée, sans arrondi ni erreur de saisie.",
+          },
+          {
+            title: "Fonctionne sans internet",
+            description:
+              "Conçu en Offline First : la vente, le stock et les rapports restent disponibles même en cas de coupure internet.",
+          },
+          {
+            title: "Données protégées",
+            description:
+              "Sauvegarde automatique des données à chaque fermeture de l'application, pour ne jamais perdre une journée de vente.",
+          },
+          {
+            title: "Prix en dinars algériens",
+            description: "Le système de prix est conçu pour gérer avec précision les montants en dinars algériens.",
+          },
+        ],
+        forWho: "Boucheries, charcuteries et commerces de viande souhaitant moderniser leur caisse et leur gestion de stock.",
+        includes: [
+          "Installation et connexion de la balance électronique",
+          "Paramétrage des produits et des prix",
+          "Formation du personnel de caisse",
+          "Support technique et sauvegardes",
+        ],
+      },
+    },
+    "qr-chief": {
+      title: "QR-Chief — Générateur de QR codes",
+      tagline: "Créez, personnalisez et partagez vos QR codes",
+      shortDescription:
+        "Application pour créer et personnaliser des codes QR professionnels (liens, textes, fichiers) avec un paiement unique, sans abonnement.",
+      features: [
+        "Création de QR codes pour liens, textes et fichiers (PDF, images)",
+        "Personnalisation des couleurs, formes et logo",
+        "Export en PNG, JPG et SVG",
+        "Espace personnel pour sauvegarder et gérer vos QR codes",
+        "Interface disponible en français, arabe et anglais",
+      ],
+      priceLabel: "Paiement unique",
+      priceNote: "Licence à vie, sans abonnement mensuel ni annuel",
+      detail: {
+        intro:
+          "QR-Chief est une application pour créer, personnaliser et gérer des codes QR professionnels : liens, textes, menus digitaux, documents ou fichiers, avec un rendu à l'image de votre marque.",
+        benefits: [
+          {
+            title: "Un seul paiement, à vie",
+            description:
+              "Contrairement aux outils par abonnement, QR-Chief se paie une seule fois pour un usage illimité dans le temps.",
+          },
+          {
+            title: "Design professionnel",
+            description:
+              "Couleurs, formes de modules, logo et fond transparent pour des QR codes à l'image de votre activité.",
+          },
+          {
+            title: "Tout dans un seul endroit",
+            description: "Vos QR codes et fichiers associés restent sauvegardés et modifiables dans votre espace personnel.",
+          },
+        ],
+        forWho:
+          "Restaurants et cafés (menus digitaux), commerces, entreprises, agences de voyage, marketeurs et indépendants souhaitant partager liens et documents facilement.",
+        includes: [
+          "Accès à l'application avec licence à vie",
+          "Personnalisation initiale à votre image",
+          "Accompagnement à la prise en main",
+        ],
+      },
+    },
+    "tapsit-school": {
+      title: "TAPSIT School — Gestion scolaire",
+      tagline: "Une gestion scolaire plus organisée et connectée",
+      shortDescription:
+        "Plateforme numérique de gestion scolaire reliant administration, enseignants, parents et élèves autour d'informations claires et centralisées.",
+      features: [
+        "Espace Administration : gestion des classes, enseignants et élèves",
+        "Espace Enseignant : absences, notes, évaluations et emploi du temps",
+        "Espace Parents : suivi scolaire et communication avec l'établissement",
+        "Gestion des rôles, habilitations et confidentialité des données",
+        "Identité visuelle personnalisable selon votre établissement",
+      ],
+      priceLabel: "Sur devis",
+      priceNote: "Tarification selon le nombre d'élèves et les modules activés",
+      detail: {
+        intro:
+          "TAPSIT School est une plateforme numérique dédiée à la gestion scolaire et au suivi pédagogique, pensée pour organiser les informations et simplifier la coordination entre l'établissement, les enseignants, les parents et les élèves.",
+        benefits: [
+          {
+            title: "Une seule plateforme pour tous",
+            description:
+              "Administration, enseignants et parents accèdent chacun à une interface adaptée à leur rôle, reliée aux mêmes données.",
+          },
+          {
+            title: "Suivi pédagogique simplifié",
+            description: "Absences, notes, évaluations et moyennes centralisées et accessibles en quelques clics.",
+          },
+          {
+            title: "Communication facilitée",
+            description: "Les parents suivent la scolarité de leurs enfants sans dépendre d'échanges papier dispersés.",
+          },
+          {
+            title: "Adaptable à votre établissement",
+            description:
+              "Logo, couleurs et fonctionnalités peuvent être adaptés à l'identité et à l'organisation de votre école.",
+          },
+        ],
+        forWho:
+          "Écoles primaires, collèges, lycées, établissements privés et centres de formation souhaitant digitaliser leur gestion pédagogique.",
+        includes: [
+          "Paramétrage de l'établissement et des classes",
+          "Création des comptes administration, enseignants et parents",
+          "Formation des équipes pédagogiques",
+          "Support technique et évolutions",
+        ],
+      },
+    },
   },
   consultingCard: {
     title: "Consulting en transformation digitale",
@@ -431,6 +618,10 @@ const fr: Dictionary = {
         { value: "gestion", label: "Application de gestion" },
         { value: "vitrine", label: "Site vitrine" },
         { value: "ecommerce", label: "Site e-commerce" },
+        { value: "keswa", label: "KESWA — Gestion de magasins de mode" },
+        { value: "bouchli", label: "BOUCHLI — Gestion de boucheries" },
+        { value: "qr-chief", label: "QR-Chief — Générateur de QR codes" },
+        { value: "tapsit-school", label: "TAPSIT School — Gestion scolaire" },
         { value: "consulting", label: "Consulting en transformation digitale" },
         { value: "autre", label: "Autre / je ne sais pas encore" },
       ],

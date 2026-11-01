@@ -10,6 +10,7 @@ import { Button } from "@/components/button";
 
 export function ProductsPreview({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const rtl = locale === "ar";
+  const featuredProducts = productsMeta.filter((meta) => meta.featured);
 
   return (
     <section className="bg-brand-50/40 py-24">
@@ -26,7 +27,7 @@ export function ProductsPreview({ locale, dict }: { locale: Locale; dict: Dictio
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {productsMeta.map((meta, i) => {
+          {featuredProducts.map((meta, i) => {
             const product = dict.products[meta.slug];
             return (
               <ScrollReveal key={meta.slug} delay={i * 100}>

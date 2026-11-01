@@ -8,6 +8,10 @@ import {
   Monitor,
   ShoppingCart,
   Compass,
+  Shirt,
+  Beef,
+  QrCode,
+  GraduationCap,
   type LucideProps,
 } from "lucide-react";
 
@@ -21,6 +25,10 @@ export const iconMap = {
   monitor: Monitor,
   "shopping-cart": ShoppingCart,
   compass: Compass,
+  shirt: Shirt,
+  beef: Beef,
+  "qr-code": QrCode,
+  "graduation-cap": GraduationCap,
 } as const;
 
 export type IconName = keyof typeof iconMap;
