@@ -1,9 +1,9 @@
 export const SITE_CONTACT = {
   email: "contact@cdta.dz",
-  phoneDisplay: "+213 555 00 00 00",
-  phoneHref: "+213555000000",
-  whatsappNumber: "213555000000",
-  whatsappUrl: "https://wa.me/213555000000",
+  phoneDisplay: "+213 555 10 93 49",
+  phoneHref: "+213555109349",
+  whatsappNumber: "213555109349",
+  whatsappUrl: "https://wa.me/213555109349",
 };
 
 export function whatsappHref(message?: string): string {

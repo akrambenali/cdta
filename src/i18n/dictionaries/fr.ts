@@ -17,7 +17,7 @@ const fr: Dictionary = {
     quoteCta: "Demander un devis",
   },
   hero: {
-    eyebrow: "Consultant indépendant en transformation digitale",
+    eyebrow: "Équipe spécialisée en transformation digitale et développement",
     title: "Digitalisez votre entreprise",
     highlight: "sans complexité",
     subtitle:
@@ -27,7 +27,6 @@ const fr: Dictionary = {
     stats: [
       { value: "10 ans", label: "d'expérience en développement" },
       { value: "Orange · SFR · Djezzy", label: "expériences télécoms" },
-      { value: "DA", label: "paiement en dinars algériens" },
     ],
     dashboard: {
       metricGrowthLabel: "Commandes en ligne",
@@ -46,7 +45,7 @@ const fr: Dictionary = {
         icon: "shield-check",
         title: "10 ans d'expérience",
         description:
-          "Un parcours de développeur front-end et de consultant en transformation digitale, forgé sur des projets exigeants en Algérie et à l'international.",
+          "Une équipe spécialisée en transformation digitale et développement (Next.js, React.js), forgée sur des projets exigeants en Algérie et à l'international.",
       },
       {
         icon: "clock",
@@ -424,31 +423,31 @@ const fr: Dictionary = {
   aboutPage: {
     hero: {
       eyebrow: "À propos",
-      title: "Un consultant senior, dix ans d'expérience terrain",
+      title: "Une équipe spécialisée en transformation digitale et développement",
       subtitle:
-        "Développement front-end, architecture logicielle et transformation digitale, au service des entreprises algériennes.",
+        "Développement Next.js et React.js, architecture logicielle et transformation digitale, au service des entreprises algériennes.",
     },
     bio: [
-      "Fort de dix années d'expérience en développement et en transformation digitale, j'accompagne aujourd'hui les PME et entrepreneurs algériens dans la digitalisation de leur activité, en Algérie comme à l'international.",
-      "Spécialisé en développement front-end (Angular, Vue.js) et en architecture de solutions web, j'ai eu l'occasion de travailler sur des projets exigeants au sein de grands groupes télécoms — Orange, SFR et Djezzy — où j'ai développé une exigence forte en matière de qualité, de performance et de fiabilité.",
-      "Cette expérience m'a convaincu que la technologie n'a de valeur que si elle sert des objectifs concrets. C'est pourquoi j'accompagne chaque client avec une approche pragmatique : comprendre le métier avant de choisir l'outil, et livrer des solutions réellement utilisables au quotidien.",
+      "Forte de dix années d'expérience en développement et en transformation digitale, notre équipe accompagne aujourd'hui les PME et entrepreneurs algériens dans la digitalisation de leur activité, en Algérie comme à l'international.",
+      "Spécialisée en développement avec Next.js et React.js et en architecture de solutions web, notre équipe a eu l'occasion de travailler sur des projets exigeants au sein de grands groupes télécoms — Orange, SFR et Djezzy — où elle a développé une exigence forte en matière de qualité, de performance et de fiabilité.",
+      "Cette expérience nous a convaincus que la technologie n'a de valeur que si elle sert des objectifs concrets. C'est pourquoi nous accompagnons chaque client avec une approche pragmatique : comprendre le métier avant de choisir l'outil, et livrer des solutions réellement utilisables au quotidien.",
     ],
     experienceTitle: "Parcours & expertise",
     experienceItems: [
       { title: "10 ans d'expérience", description: "En développement logiciel et en transformation digitale." },
-      { title: "Front-end avancé", description: "Expertise Angular et Vue.js sur des applications à forte exigence technique." },
+      { title: "Développement moderne", description: "Expertise Next.js et React.js sur des applications à forte exigence technique." },
       { title: "Grands comptes télécoms", description: "Expériences chez Orange, SFR et Djezzy sur des projets à grande échelle." },
       { title: "Vision internationale", description: "Une pratique construite entre l'Algérie et l'international." },
     ],
     skillsTitle: "Compétences clés",
     skills: [
-      "Développement front-end (Angular, Vue.js)",
+      "Développement web avec Next.js et React.js",
       "Architecture d'applications web et back-office",
       "Plateformes e-commerce et de distribution",
       "Audit digital et conseil en transformation",
       "Accompagnement au changement pour PME",
     ],
-    commitmentTitle: "Mon engagement",
+    commitmentTitle: "Notre engagement",
     commitments: [
       "Des solutions sur mesure, jamais des templates recyclés",
       "Une communication claire, en français, sans jargon inutile",
@@ -457,8 +456,8 @@ const fr: Dictionary = {
     ],
     cta: {
       title: "Envie d'échanger sur votre projet ?",
-      subtitle: "Je réponds personnellement à chaque demande, sous 24 à 48h.",
-      ctaPrimary: "Me contacter",
+      subtitle: "Nous répondons personnellement à chaque demande, sous 24 à 48h.",
+      ctaPrimary: "Nous contacter",
     },
   },
   contactPage: {

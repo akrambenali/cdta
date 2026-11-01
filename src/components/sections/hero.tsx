@@ -35,7 +35,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             </Button>
           </div>
 
-          <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
+          <dl className="mt-14 flex flex-wrap gap-x-10 gap-y-6 border-t border-white/10 pt-8">
             {dict.hero.stats.map((stat) => (
               <div key={stat.label}>
                 <dd className="text-lg font-semibold text-white sm:text-xl">{stat.value}</dd>
