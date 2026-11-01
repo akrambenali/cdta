@@ -1,31 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f9fc;
-  --foreground: #0b1526;
+  --background: #f6f8f7;
+  --foreground: #0f211d;
 
-  --color-brand-50: #eef4fc;
-  --color-brand-100: #d9e6f7;
-  --color-brand-200: #b3ccef;
-  --color-brand-300: #82abe2;
-  --color-brand-400: #4f83cc;
-  --color-brand-500: #2f60ac;
-  --color-brand-600: #204889;
-  --color-brand-700: #17356a;
-  --color-brand-800: #10254c;
-  --color-brand-900: #0a1a37;
-  --color-brand-950: #060f21;
+  --color-brand-50: #f1f6f5;
+  --color-brand-100: #dfebe8;
+  --color-brand-200: #c0d7d1;
+  --color-brand-300: #98bdb3;
+  --color-brand-400: #6a9c8f;
+  --color-brand-500: #487f71;
+  --color-brand-600: #37655a;
+  --color-brand-700: #2c5149;
+  --color-brand-800: #24423b;
+  --color-brand-900: #1c352f;
+  --color-brand-950: #0f211d;
 
-  --color-accent-50: #fff3ec;
-  --color-accent-100: #ffe1cf;
-  --color-accent-200: #ffc19f;
-  --color-accent-300: #ff9c68;
-  --color-accent-400: #ff7a38;
-  --color-accent-500: #f4611a;
-  --color-accent-600: #d24810;
-  --color-accent-700: #ab370e;
-  --color-accent-800: #862c12;
-  --color-accent-900: #6c2712;
+  --color-accent-50: #ecfdf5;
+  --color-accent-100: #d1fae5;
+  --color-accent-200: #a7f3d0;
+  --color-accent-300: #6ee7b7;
+  --color-accent-400: #34d399;
+  --color-accent-500: #10b981;
+  --color-accent-600: #059669;
+  --color-accent-700: #047857;
+  --color-accent-800: #065f46;
+  --color-accent-900: #064e3b;
 }
 
 @theme inline {
@@ -74,8 +74,8 @@ body {
 
 .reveal {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .reveal.is-visible {
@@ -89,13 +89,6 @@ body {
     transform: none;
     transition: none;
   }
-}
-
-.bg-grid {
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 40px 40px;
 }
 
 @keyframes wa-ping {

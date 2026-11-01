@@ -27,14 +27,13 @@ export default async function ConsultingPage({ params }: PageProps<"/[lang]/cons
 
   return (
     <>
-      <section className="relative overflow-hidden bg-brand-950 py-20 sm:py-28">
-        <div className="absolute inset-0 bg-grid opacity-30" />
-        <Container className="relative max-w-3xl text-center">
-          <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold text-white/80">
+      <section className="bg-brand-950 py-20 sm:py-28">
+        <Container className="max-w-3xl text-center">
+          <span className="inline-flex items-center rounded-full border border-white/12 px-4 py-1.5 text-xs font-medium text-white/70">
             {c.hero.eyebrow}
           </span>
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">{c.hero.title}</h1>
-          <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-white/65">{c.hero.subtitle}</p>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">{c.hero.title}</h1>
+          <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-white/60">{c.hero.subtitle}</p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button href={href(lang, "/contact")} variant="primary" withArrow rtl={rtl}>
               {c.hero.ctaPrimary}
@@ -42,7 +41,7 @@ export default async function ConsultingPage({ params }: PageProps<"/[lang]/cons
             <Button
               href={href(lang, "/produits")}
               variant="outline"
-              className="border-white/20 text-white hover:border-white/40 hover:bg-white/5"
+              className="border-white/15 text-white hover:border-white/30 hover:bg-white/5"
             >
               {c.hero.ctaSecondary}
             </Button>
@@ -58,7 +57,7 @@ export default async function ConsultingPage({ params }: PageProps<"/[lang]/cons
             {c.steps.map((step, i) => (
               <ScrollReveal key={step.number} delay={i * 100}>
                 <div className="relative h-full rounded-2xl border border-brand-900/8 bg-white p-6 shadow-sm">
-                  <span className="text-4xl font-extrabold text-accent-100">{step.number}</span>
+                  <span className="text-4xl font-bold text-accent-100">{step.number}</span>
                   <h3 className="mt-3 text-base font-bold text-brand-950">{step.title}</h3>
                   <p className="mt-2 text-sm leading-6 text-brand-900/65">{step.description}</p>
                 </div>
@@ -74,7 +73,7 @@ export default async function ConsultingPage({ params }: PageProps<"/[lang]/cons
             <div className="flex size-12 items-center justify-center rounded-xl bg-brand-900/[0.06] text-brand-800">
               <Target className="size-6" />
             </div>
-            <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-brand-950">{c.forWho.title}</h2>
+            <h2 className="mt-5 text-3xl font-bold tracking-tight text-brand-950">{c.forWho.title}</h2>
             <p className="mt-4 text-base leading-7 text-brand-900/65">{c.forWho.description}</p>
           </ScrollReveal>
 

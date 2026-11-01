@@ -10,11 +10,11 @@ export default function NotFound() {
         <div className="mx-auto flex size-14 items-center justify-center rounded-2xl bg-white/10 text-accent-400">
           <Compass className="size-7" />
         </div>
-        <h1 className="mt-6 text-3xl font-extrabold text-white">{fr.notFound.title}</h1>
-        <p className="mt-3 text-base leading-7 text-white/65">{fr.notFound.description}</p>
+        <h1 className="mt-6 text-3xl font-bold text-white">{fr.notFound.title}</h1>
+        <p className="mt-3 text-base leading-7 text-white/60">{fr.notFound.description}</p>
         <Link
           href="/fr"
-          className="mt-8 inline-flex items-center justify-center rounded-full bg-accent-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-500/25 hover:bg-accent-600"
+          className="mt-8 inline-flex items-center justify-center rounded-full bg-accent-500 px-6 py-3 text-sm font-semibold text-white hover:bg-accent-600"
         >
           {fr.notFound.cta}
         </Link>

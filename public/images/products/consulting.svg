@@ -1,39 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
   <defs>
     <linearGradient id="consult-bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0a1a37"/>
-      <stop offset="1" stop-color="#060f21"/>
+      <stop offset="0" stop-color="#1c352f"/>
+      <stop offset="1" stop-color="#0f211d"/>
     </linearGradient>
   </defs>
 
   <rect width="800" height="600" fill="url(#consult-bg)"/>
-  <circle cx="650" cy="120" r="180" fill="#f4611a" fill-opacity="0.18"/>
-  <circle cx="90" cy="520" r="150" fill="#2f60ac" fill-opacity="0.22"/>
+  <circle cx="650" cy="120" r="180" fill="#059669" fill-opacity="0.18"/>
+  <circle cx="90" cy="520" r="150" fill="#487f71" fill-opacity="0.22"/>
 
   <!-- roadmap line -->
   <path d="M130 330 H670" stroke="#ffffff" stroke-opacity="0.18" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
 
   <!-- step 1 -->
   <circle cx="130" cy="330" r="34" fill="#ffffff" fill-opacity="0.08"/>
-  <circle cx="130" cy="330" r="22" fill="#f4611a"/>
+  <circle cx="130" cy="330" r="22" fill="#059669"/>
   <text x="130" y="337" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">01</text>
   <rect x="88" y="378" width="84" height="10" rx="5" fill="#ffffff" fill-opacity="0.75"/>
 
   <!-- step 2 -->
   <circle cx="310" cy="330" r="34" fill="#ffffff" fill-opacity="0.08"/>
-  <circle cx="310" cy="330" r="22" fill="#2f60ac"/>
+  <circle cx="310" cy="330" r="22" fill="#487f71"/>
   <text x="310" y="337" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">02</text>
   <rect x="264" y="378" width="92" height="10" rx="5" fill="#ffffff" fill-opacity="0.75"/>
 
   <!-- step 3 -->
   <circle cx="490" cy="330" r="34" fill="#ffffff" fill-opacity="0.08"/>
-  <circle cx="490" cy="330" r="22" fill="#2f60ac"/>
+  <circle cx="490" cy="330" r="22" fill="#487f71"/>
   <text x="490" y="337" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">03</text>
   <rect x="440" y="378" width="100" height="10" rx="5" fill="#ffffff" fill-opacity="0.75"/>
 
   <!-- step 4 -->
   <circle cx="670" cy="330" r="34" fill="#ffffff" fill-opacity="0.08"/>
-  <circle cx="670" cy="330" r="22" fill="#f4611a"/>
+  <circle cx="670" cy="330" r="22" fill="#059669"/>
   <text x="670" y="337" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">04</text>
   <rect x="632" y="378" width="76" height="10" rx="5" fill="#ffffff" fill-opacity="0.75"/>
 
@@ -42,6 +42,6 @@
   <rect x="130" y="184" width="200" height="14" rx="6" fill="#ffffff" fill-opacity="0.5"/>
 
   <!-- growth arrow -->
-  <path d="M560 470 L610 420 L650 455 L705 390" stroke="#f4611a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M672 390 H705 V423" stroke="#f4611a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M560 470 L610 420 L650 455 L705 390" stroke="#059669" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M672 390 H705 V423" stroke="#059669" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>

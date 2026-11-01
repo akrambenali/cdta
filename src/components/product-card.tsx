@@ -28,17 +28,16 @@ export function ProductCard({
   rtl?: boolean;
 }) {
   return (
-    <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-brand-900/8 bg-white shadow-sm shadow-brand-900/[0.03] transition-all duration-300 hover:-translate-y-1 hover:border-accent-200 hover:shadow-xl hover:shadow-brand-900/[0.06]">
+    <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-brand-900/8 bg-white shadow-sm shadow-black/[0.03] transition-colors duration-300 hover:border-accent-200">
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-50">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={image}
           alt={title}
           loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-950/15 via-transparent to-transparent" />
-        <div className="absolute -bottom-6 start-6 flex size-12 items-center justify-center rounded-xl border border-brand-900/8 bg-white text-brand-800 shadow-md">
+        <div className="absolute -bottom-6 start-6 flex size-12 items-center justify-center rounded-xl border border-brand-900/8 bg-white text-brand-800 shadow-sm">
           <Icon name={icon} className="size-6" />
         </div>
       </div>

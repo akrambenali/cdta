@@ -28,13 +28,13 @@ export default async function ContactPage({ params, searchParams }: PageProps<"/
     <>
       <section className="border-b border-brand-900/8 bg-brand-950 py-20 sm:py-24">
         <Container className="max-w-2xl text-center">
-          <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold text-white/80">
+          <span className="inline-flex items-center rounded-full border border-white/12 px-4 py-1.5 text-xs font-medium text-white/70">
             {dict.contactPage.hero.eyebrow}
           </span>
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
             {dict.contactPage.hero.title}
           </h1>
-          <p className="mx-auto mt-5 text-base leading-7 text-white/65">{dict.contactPage.hero.subtitle}</p>
+          <p className="mx-auto mt-5 text-base leading-7 text-white/60">{dict.contactPage.hero.subtitle}</p>
         </Container>
       </section>
 

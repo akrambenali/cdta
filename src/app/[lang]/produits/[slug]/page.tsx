@@ -56,9 +56,9 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
               <div className="flex size-14 items-center justify-center rounded-2xl bg-white/10 text-accent-400">
                 <Icon name={meta.icon} className="size-7" />
               </div>
-              <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{product.title}</h1>
+              <h1 className="mt-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">{product.title}</h1>
               <p className="mt-2 text-base font-semibold text-accent-400">{product.tagline}</p>
-              <p className="mt-4 text-base leading-7 text-white/65">{product.detail.intro}</p>
+              <p className="mt-4 text-base leading-7 text-white/60">{product.detail.intro}</p>
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button href={href(lang, `/contact?product=${slug}`)} variant="primary" withArrow rtl={rtl}>
@@ -67,7 +67,7 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
                 <Button
                   href={href(lang, `/contact?product=${slug}`)}
                   variant="outline"
-                  className="border-white/20 text-white hover:border-white/40 hover:bg-white/5"
+                  className="border-white/15 text-white hover:border-white/30 hover:bg-white/5"
                 >
                   {dict.productDetail.ctaQuote}
                 </Button>
@@ -78,7 +78,7 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
               <p className="text-xs font-semibold uppercase tracking-wide text-white/40">
                 {dict.productDetail.priceTitle}
               </p>
-              <p className="mt-2 text-2xl font-extrabold text-white">{product.priceLabel}</p>
+              <p className="mt-2 text-2xl font-bold text-white">{product.priceLabel}</p>
               <p className="mt-1 text-xs text-white/50">{product.priceNote}</p>
 
               {meta.pdf && (

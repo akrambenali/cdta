@@ -136,7 +136,7 @@ export function ContactForm({
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent-500 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-500/25 transition-all hover:bg-accent-600 disabled:cursor-not-allowed disabled:opacity-70"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent-600 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-accent-700 disabled:cursor-not-allowed disabled:opacity-70"
       >
         {status === "submitting" && <Loader2 className="size-4 animate-spin" />}
         {status === "submitting" ? form.submitting : form.submit}
