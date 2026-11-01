@@ -72,7 +72,7 @@ const fr: Dictionary = {
     eyebrow: "Catalogue",
     title: "Des solutions digitales pensées pour votre activité",
     subtitle:
-      "Plateformes de distribution, outils de gestion, sites vitrine et e-commerce : chaque produit est conçu pour être opérationnel rapidement.",
+      "Plateforme de distribution, logiciels métiers sur mesure et outils numériques : chaque produit que nous avons développé et livré, prêt à être présenté sur simple demande.",
     viewAll: "Voir tout le catalogue",
   },
   ctaBand: {
@@ -131,141 +131,6 @@ const fr: Dictionary = {
           "Personnalisation en marque blanche",
           "Formation des équipes",
           "Support technique et évolutions",
-        ],
-      },
-    },
-    gestion: {
-      title: "Application de gestion",
-      tagline: "Votre back-office métier, simple et efficace",
-      shortDescription:
-        "Site web / back-office sur mesure pour les PME souhaitant digitaliser leur gestion interne : stock, commandes et clients centralisés dans un seul outil.",
-      features: [
-        "Gestion du stock et des approvisionnements",
-        "Suivi des commandes et de la facturation",
-        "Fiche clients et historique des échanges",
-        "Accès multi-utilisateurs avec droits personnalisés",
-        "Interface claire, accessible depuis mobile et ordinateur",
-      ],
-      priceLabel: "À partir de 90 000 DA",
-      priceNote: "Prix indicatif, ajusté selon vos besoins fonctionnels",
-      detail: {
-        intro:
-          "Une application de gestion sur mesure pour remplacer les tableaux Excel et les processus manuels par un outil centralisé, pensé pour le quotidien de votre équipe.",
-        benefits: [
-          {
-            title: "Un seul outil pour tout gérer",
-            description: "Stock, commandes, clients et facturation réunis dans une interface unique et cohérente.",
-          },
-          {
-            title: "Gain de temps immédiat",
-            description: "Moins de saisies manuelles, moins d'erreurs, des processus qui suivent votre activité réelle.",
-          },
-          {
-            title: "Accès sécurisé et partagé",
-            description: "Chaque membre de l'équipe accède aux informations dont il a besoin, avec les droits adaptés à son rôle.",
-          },
-          {
-            title: "Évolutif",
-            description: "L'application grandit avec votre entreprise : nouveaux modules ajoutés au fur et à mesure de vos besoins.",
-          },
-        ],
-        forWho:
-          "PME, commerces et entrepreneurs en Algérie qui gèrent encore leur activité avec des outils dispersés (papier, Excel, WhatsApp) et veulent centraliser leur gestion.",
-        includes: [
-          "Analyse de vos besoins et processus actuels",
-          "Développement du back-office sur mesure",
-          "Import de vos données existantes",
-          "Formation et support au démarrage",
-        ],
-      },
-    },
-    vitrine: {
-      title: "Site vitrine",
-      tagline: "Une présence en ligne professionnelle",
-      shortDescription:
-        "Création de sites vitrine professionnels pour présenter votre activité, vos services et vos réalisations en ligne, avec un design moderne et soigné.",
-      features: [
-        "Design moderne, responsive et rapide",
-        "Pages sur mesure (services, réalisations, équipe, contact)",
-        "Optimisation pour les moteurs de recherche (SEO)",
-        "Formulaire de contact intégré",
-        "Nom de domaine et hébergement accompagnés",
-      ],
-      priceLabel: "À partir de 45 000 DA",
-      priceNote: "Selon le nombre de pages et les fonctionnalités souhaitées",
-      detail: {
-        intro:
-          "Un site vitrine conçu pour donner une image professionnelle et crédible à votre activité, avec un message clair et une expérience agréable sur mobile comme sur ordinateur.",
-        benefits: [
-          {
-            title: "Crédibilité renforcée",
-            description: "Un design soigné qui inspire confiance auprès de vos prospects et partenaires.",
-          },
-          {
-            title: "Visible sur Google",
-            description: "Une structure optimisée pour le référencement naturel dès la mise en ligne.",
-          },
-          {
-            title: "Rapide à lancer",
-            description: "Un processus clair, de la maquette à la mise en ligne, sans complexité technique de votre côté.",
-          },
-          {
-            title: "Facile à faire évoluer",
-            description: "Ajout de pages, de contenus ou de nouvelles sections au fil de la croissance de votre activité.",
-          },
-        ],
-        forWho:
-          "Entrepreneurs, commerces, professions libérales et petites entreprises souhaitant exister en ligne de façon professionnelle.",
-        includes: [
-          "Maquette et validation du design",
-          "Développement et intégration des contenus",
-          "Optimisation SEO de base",
-          "Accompagnement au lancement",
-        ],
-      },
-    },
-    ecommerce: {
-      title: "Site e-commerce",
-      tagline: "Vendez en ligne, sans complexité",
-      shortDescription:
-        "Boutique en ligne clé en main : catalogue produits, panier, gestion des commandes et suivi des ventes, pensée pour le marché algérien.",
-      features: [
-        "Catalogue produits avec variantes et stock",
-        "Panier et tunnel de commande optimisés",
-        "Gestion des commandes et de la livraison",
-        "Espace client et historique d'achats",
-        "Tableau de bord des ventes et statistiques",
-      ],
-      priceLabel: "À partir de 150 000 DA",
-      priceNote: "Selon le volume du catalogue et les intégrations nécessaires",
-      detail: {
-        intro:
-          "Une boutique en ligne complète pour vendre vos produits sur internet, avec une gestion simplifiée des commandes et une expérience d'achat fluide pour vos clients.",
-        benefits: [
-          {
-            title: "Prêt à vendre",
-            description: "Catalogue, panier et gestion des commandes fonctionnent ensemble dès le lancement.",
-          },
-          {
-            title: "Adapté au marché local",
-            description: "Options de paiement et de livraison pensées pour les usages algériens (paiement à la livraison, etc.).",
-          },
-          {
-            title: "Gestion simplifiée",
-            description: "Un back-office clair pour suivre vos commandes, votre stock et vos ventes au quotidien.",
-          },
-          {
-            title: "Prêt à grandir",
-            description: "Une architecture pensée pour absorber la croissance de votre catalogue et de votre trafic.",
-          },
-        ],
-        forWho:
-          "Commerçants, marques et entrepreneurs souhaitant vendre leurs produits en ligne avec un outil fiable et évolutif.",
-        includes: [
-          "Mise en place du catalogue produits",
-          "Configuration des modes de paiement et livraison",
-          "Formation à la gestion des commandes",
-          "Support technique post-lancement",
         ],
       },
     },
@@ -616,9 +481,6 @@ const fr: Dictionary = {
       productPlaceholder: "Sélectionnez une option",
       productOptions: [
         { value: "sdp", label: "SDP — Smart Distribution Platform" },
-        { value: "gestion", label: "Application de gestion" },
-        { value: "vitrine", label: "Site vitrine" },
-        { value: "ecommerce", label: "Site e-commerce" },
         { value: "keswa", label: "KESWA — Gestion de magasins de mode" },
         { value: "bouchli", label: "BOUCHLI — Gestion de boucheries" },
         { value: "qr-chief", label: "QR-Chief — Générateur de QR codes" },
