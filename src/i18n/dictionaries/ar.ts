@@ -642,6 +642,11 @@ const ar: Dictionary = {
     description: "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
     cta: "الرجوع إلى الرئيسية",
   },
+  whatsappWidget: {
+    ariaLabel: "تحدث معنا عبر واتساب",
+    tooltip: "تحدث معنا عبر واتساب",
+    message: "مرحباً، أرغب في معرفة المزيد عن منتجاتكم وخدماتكم.",
+  },
 };
 
 export default ar;

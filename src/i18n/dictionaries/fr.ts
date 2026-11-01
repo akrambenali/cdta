@@ -661,6 +661,11 @@ const fr: Dictionary = {
     description: "La page que vous recherchez n'existe pas ou a été déplacée.",
     cta: "Retour à l'accueil",
   },
+  whatsappWidget: {
+    ariaLabel: "Discuter sur WhatsApp",
+    tooltip: "Discutons sur WhatsApp",
+    message: "Bonjour, je souhaite en savoir plus sur vos produits et services.",
+  },
 };
 
 export default fr;

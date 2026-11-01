@@ -6,6 +6,7 @@ import { isLocale, localeConfig, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -38,6 +39,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         <Header locale={lang} dict={dict} />
         <main className="flex-1">{children}</main>
         <Footer locale={lang} dict={dict} />
+        <WhatsAppButton dict={dict} />
       </body>
     </html>
   );

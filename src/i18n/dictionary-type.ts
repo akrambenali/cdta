@@ -168,4 +168,9 @@ export interface Dictionary {
     description: string;
     cta: string;
   };
+  whatsappWidget: {
+    ariaLabel: string;
+    tooltip: string;
+    message: string;
+  };
 }
