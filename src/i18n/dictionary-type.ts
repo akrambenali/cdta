@@ -90,6 +90,7 @@ export interface Dictionary {
     ctaDemo: string;
     ctaQuote: string;
     otherProductsTitle: string;
+    brochureLabel: string;
   };
   consultingPage: {
     hero: { eyebrow: string; title: string; subtitle: string; ctaPrimary: string; ctaSecondary: string };

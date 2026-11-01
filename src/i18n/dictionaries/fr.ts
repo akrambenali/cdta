@@ -482,6 +482,7 @@ const fr: Dictionary = {
     ctaDemo: "Demander une démo",
     ctaQuote: "Demander un devis",
     otherProductsTitle: "Découvrir d'autres produits",
+    brochureLabel: "Télécharger la fiche produit (PDF)",
   },
   consultingPage: {
     hero: {

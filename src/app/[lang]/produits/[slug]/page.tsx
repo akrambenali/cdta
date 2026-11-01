@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, FileText } from "lucide-react";
 import { isLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { productSlugs, productsMeta, type ProductSlug } from "@/data/products-meta";
@@ -37,7 +37,7 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
   const BackArrow = rtl ? ArrowRight : ArrowLeft;
   const product = dict.products[slug];
   const meta = productsMeta.find((m) => m.slug === slug)!;
-  const otherProducts = productsMeta.filter((m) => m.slug !== slug);
+  const otherProducts = productsMeta.filter((m) => m.slug !== slug).slice(0, 3);
 
   return (
     <>
@@ -80,8 +80,27 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
               </p>
               <p className="mt-2 text-2xl font-extrabold text-white">{product.priceLabel}</p>
               <p className="mt-1 text-xs text-white/50">{product.priceNote}</p>
+
+              {meta.pdf && (
+                <a
+                  href={meta.pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 flex items-center gap-2.5 rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm font-medium text-white/85 transition-colors hover:border-white/30 hover:bg-white/10"
+                >
+                  <FileText className="size-4 shrink-0 text-accent-400" />
+                  <span>{dict.productDetail.brochureLabel}</span>
+                </a>
+              )}
             </div>
           </div>
+
+          <ScrollReveal delay={80}>
+            <div className="mt-10 overflow-hidden rounded-2xl border border-white/10">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={meta.image} alt={product.title} className="max-h-[440px] w-full object-cover" />
+            </div>
+          </ScrollReveal>
         </Container>
       </section>
 
@@ -157,6 +176,7 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
                 <ProductCard
                   key={otherMeta.slug}
                   icon={otherMeta.icon}
+                  image={otherMeta.image}
                   title={otherProduct.title}
                   tagline={otherProduct.tagline}
                   description={otherProduct.shortDescription}

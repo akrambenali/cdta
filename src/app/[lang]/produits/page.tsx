@@ -45,6 +45,7 @@ export default async function ProductsPage({ params }: PageProps<"/[lang]/produi
                 <ScrollReveal key={meta.slug} delay={i * 80}>
                   <ProductCard
                     icon={meta.icon}
+                    image={meta.image}
                     title={product.title}
                     tagline={product.tagline}
                     description={product.shortDescription}
@@ -62,6 +63,7 @@ export default async function ProductsPage({ params }: PageProps<"/[lang]/produi
             <ScrollReveal delay={productsMeta.length * 80}>
               <ProductCard
                 icon="compass"
+                image="/images/products/consulting.svg"
                 title={dict.consultingCard.title}
                 tagline={dict.consultingCard.tagline}
                 description={dict.consultingCard.shortDescription}

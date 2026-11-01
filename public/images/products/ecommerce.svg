@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="ecom-bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eef4fc"/>
+      <stop offset="1" stop-color="#d9e6f7"/>
+    </linearGradient>
+    <linearGradient id="ecom-p1" x1="80" y1="190" x2="260" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f60ac"/>
+      <stop offset="1" stop-color="#17356a"/>
+    </linearGradient>
+    <linearGradient id="ecom-p2" x1="280" y1="190" x2="460" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9c68"/>
+      <stop offset="1" stop-color="#f4611a"/>
+    </linearGradient>
+    <linearGradient id="ecom-p3" x1="480" y1="190" x2="660" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#82abe2"/>
+      <stop offset="1" stop-color="#2f60ac"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#ecom-bg)"/>
+
+  <rect x="40" y="48" width="720" height="504" rx="18" fill="#ffffff"/>
+  <rect x="40" y="48" width="720" height="504" rx="18" stroke="#c7d4e8" stroke-width="2"/>
+
+  <!-- chrome -->
+  <rect x="40" y="48" width="720" height="52" rx="18" fill="#f4f7fc"/>
+  <rect x="40" y="82" width="720" height="18" fill="#f4f7fc"/>
+  <circle cx="72" cy="74" r="6" fill="#f4611a"/>
+  <circle cx="94" cy="74" r="6" fill="#cbd5e1"/>
+  <circle cx="116" cy="74" r="6" fill="#cbd5e1"/>
+  <rect x="290" y="64" width="220" height="20" rx="10" fill="#e5ebf5"/>
+
+  <!-- top nav + cart -->
+  <rect x="80" y="128" width="70" height="14" rx="7" fill="#0a1a37"/>
+  <rect x="166" y="128" width="60" height="14" rx="7" fill="#9fb0ce"/>
+  <circle cx="696" cy="134" r="22" fill="#fff3ec"/>
+  <path d="M686 126h5l3 14h14" stroke="#f4611a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="697" cy="144" r="2.6" fill="#f4611a"/>
+  <circle cx="707" cy="144" r="2.6" fill="#f4611a"/>
+  <circle cx="724" cy="124" r="9" fill="#f4611a"/>
+  <rect x="720" y="120" width="8" height="2" fill="#ffffff"/>
+  <rect x="720" y="120" width="8" height="2" fill="#ffffff" transform="rotate(90 724 121)"/>
+
+  <!-- promo banner -->
+  <rect x="80" y="170" width="640" height="46" rx="12" fill="#0a1a37"/>
+  <rect x="104" y="188" width="220" height="10" rx="5" fill="#ffffff"/>
+  <rect x="612" y="182" width="88" height="22" rx="11" fill="#f4611a"/>
+
+  <!-- product grid -->
+  <g>
+    <rect x="80" y="238" width="180" height="140" rx="14" fill="url(#ecom-p1)"/>
+    <rect x="80" y="386" width="160" height="12" rx="6" fill="#0a1a37"/>
+    <rect x="80" y="406" width="100" height="10" rx="5" fill="#9fb0ce"/>
+    <rect x="80" y="424" width="64" height="18" rx="9" fill="#eef4fc"/>
+  </g>
+  <g>
+    <rect x="280" y="238" width="180" height="140" rx="14" fill="url(#ecom-p2)"/>
+    <rect x="280" y="386" width="160" height="12" rx="6" fill="#0a1a37"/>
+    <rect x="280" y="406" width="100" height="10" rx="5" fill="#9fb0ce"/>
+    <rect x="280" y="424" width="64" height="18" rx="9" fill="#fff3ec"/>
+  </g>
+  <g>
+    <rect x="480" y="238" width="180" height="140" rx="14" fill="url(#ecom-p3)"/>
+    <rect x="480" y="386" width="160" height="12" rx="6" fill="#0a1a37"/>
+    <rect x="480" y="406" width="100" height="10" rx="5" fill="#9fb0ce"/>
+    <rect x="480" y="424" width="64" height="18" rx="9" fill="#eef4fc"/>
+  </g>
+
+  <!-- bottom bar -->
+  <rect x="80" y="468" width="400" height="18" rx="9" fill="#e2e8f3"/>
+  <rect x="520" y="462" width="180" height="32" rx="16" fill="#f4611a"/>
+</svg>

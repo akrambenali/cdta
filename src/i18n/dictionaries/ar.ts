@@ -467,6 +467,7 @@ const ar: Dictionary = {
     ctaDemo: "اطلب عرضاً توضيحياً",
     ctaQuote: "اطلب عرض سعر",
     otherProductsTitle: "اكتشف منتجات أخرى",
+    brochureLabel: "تحميل الكتيب التعريفي (PDF)",
   },
   consultingPage: {
     hero: {

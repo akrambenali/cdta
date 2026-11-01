@@ -33,6 +33,7 @@ export function ProductsPreview({ locale, dict }: { locale: Locale; dict: Dictio
               <ScrollReveal key={meta.slug} delay={i * 100}>
                 <ProductCard
                   icon={meta.icon}
+                  image={meta.image}
                   title={product.title}
                   tagline={product.tagline}
                   description={product.shortDescription}
