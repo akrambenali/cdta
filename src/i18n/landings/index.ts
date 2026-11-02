@@ -47,6 +47,15 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
       ar: () => import("./sdp/ar").then((m) => m.default),
     },
   },
+  "tapsit-school": {
+    theme: { accent: "#0b7d74", soft: "#e6f6f4", ink: "#0c2461" },
+    logo: { src: "/images/landing/tapsit-school/logo.png", width: 720, height: 208 },
+    heroImage: { src: "/images/landing/tapsit-school/hero.jpg", width: 949, height: 938 },
+    content: {
+      fr: () => import("./tapsit-school/fr").then((m) => m.default),
+      ar: () => import("./tapsit-school/ar").then((m) => m.default),
+    },
+  },
 };
 
 export type Landing = Omit<LandingDefinition, "content"> & { content: LandingContent };

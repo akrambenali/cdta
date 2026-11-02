@@ -53,7 +53,16 @@ export type LandingIcon =
   | "workflow"
   | "rocket"
   | "warehouse"
-  | "dashboard";
+  | "dashboard"
+  | "school"
+  | "graduation-cap"
+  | "presentation"
+  | "clipboard-check"
+  | "award"
+  | "book-open"
+  | "settings"
+  | "bell"
+  | "baby";
 
 export interface LandingTheme {
   accent: string;

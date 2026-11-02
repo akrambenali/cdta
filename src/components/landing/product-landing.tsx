@@ -63,6 +63,15 @@ import {
   Store,
   Warehouse,
   Workflow,
+  Award,
+  Baby,
+  Bell,
+  BookOpen,
+  ClipboardCheck,
+  GraduationCap,
+  Presentation,
+  School,
+  Settings,
   type LucideIcon,
 } from "lucide-react";
 import type { Locale } from "@/i18n/config";
@@ -129,6 +138,15 @@ const icons: Record<LandingIcon, LucideIcon> = {
   rocket: Rocket,
   warehouse: Warehouse,
   dashboard: LayoutDashboard,
+  school: School,
+  "graduation-cap": GraduationCap,
+  presentation: Presentation,
+  "clipboard-check": ClipboardCheck,
+  award: Award,
+  "book-open": BookOpen,
+  settings: Settings,
+  bell: Bell,
+  baby: Baby,
 };
 
 function LandingIconBadge({ name, className = "" }: { name: LandingIcon; className?: string }) {
