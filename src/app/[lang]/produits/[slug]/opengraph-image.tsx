@@ -36,7 +36,7 @@ export default async function Image({ params }: { params: Params; id: Promise<st
   return renderOgImage({
     title: product.title,
     subtitle: product.tagline,
-    image: landing?.heroImage ?? meta.image,
+    image: landing?.heroImage.src ?? meta.image,
     rtl: lang === "ar",
     background: landing?.theme.ink,
     accent: landing?.theme.accent,

@@ -15,7 +15,14 @@ export type LandingIcon =
   | "printer"
   | "shield-check"
   | "languages"
-  | "laptop";
+  | "laptop"
+  | "shirt"
+  | "smartphone"
+  | "shopping-cart"
+  | "receipt"
+  | "lock"
+  | "refresh"
+  | "map-pin";
 
 export interface LandingTheme {
   accent: string;
@@ -26,6 +33,8 @@ export interface LandingTheme {
 export interface LandingSpotlight {
   image: string;
   imageAlt: string;
+  /** Default is 4:3; square suits phone screenshots. */
+  imageAspect?: "square";
   eyebrow: string;
   title: string;
   text: string;
@@ -67,10 +76,15 @@ export interface LandingContent {
   };
   spotlights: LandingSpotlight[];
   workflow: { title: string; subtitle: string; steps: string[] };
-  hardware: {
+  hardware?: {
     title: string;
     subtitle: string;
     items: { icon: LandingIcon; title: string; text: string }[];
+  };
+  audiences?: {
+    title: string;
+    subtitle: string;
+    items: { image: string; title: string }[];
   };
   faq: { title: string; subtitle: string; items: { q: string; a: string }[] };
   cta: { title: string; subtitle: string; primary: string; whatsapp: string; brochure: string };

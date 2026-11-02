@@ -5,19 +5,28 @@ import type { LandingContent, LandingTheme } from "@/i18n/landing-type";
 
 interface LandingDefinition {
   theme: LandingTheme;
-  logo?: string;
-  heroImage: string;
+  logo?: { src: string; width: number; height: number };
+  heroImage: { src: string; width: number; height: number };
   content: Record<Locale, () => Promise<LandingContent>>;
 }
 
 const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
   bouchli: {
     theme: { accent: "#d7141a", soft: "#fdecec", ink: "#141414" },
-    logo: "/images/landing/bouchli/logo.png",
-    heroImage: "/images/products/bouchli.jpg",
+    logo: { src: "/images/landing/bouchli/logo.png", width: 720, height: 162 },
+    heroImage: { src: "/images/products/bouchli.jpg", width: 1400, height: 1170 },
     content: {
       fr: () => import("./bouchli/fr").then((m) => m.default),
       ar: () => import("./bouchli/ar").then((m) => m.default),
+    },
+  },
+  keswa: {
+    theme: { accent: "#0f8f86", soft: "#e7f5f4", ink: "#0d2747" },
+    logo: { src: "/images/landing/keswa/logo.png", width: 720, height: 225 },
+    heroImage: { src: "/images/landing/keswa/hero.jpg", width: 1400, height: 1430 },
+    content: {
+      fr: () => import("./keswa/fr").then((m) => m.default),
+      ar: () => import("./keswa/ar").then((m) => m.default),
     },
   },
 };

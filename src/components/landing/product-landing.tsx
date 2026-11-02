@@ -12,14 +12,21 @@ import {
   FileText,
   Languages,
   Laptop,
+  Lock,
   LockKeyhole,
+  MapPin,
   MessageCircle,
   Monitor,
   Package,
   Printer,
+  Receipt,
+  RefreshCw,
   Scale,
   ScanBarcode,
   ShieldCheck,
+  Shirt,
+  ShoppingCart,
+  Smartphone,
   Tag,
   Truck,
   Undo2,
@@ -53,6 +60,13 @@ const icons: Record<LandingIcon, LucideIcon> = {
   "shield-check": ShieldCheck,
   languages: Languages,
   laptop: Laptop,
+  shirt: Shirt,
+  smartphone: Smartphone,
+  "shopping-cart": ShoppingCart,
+  receipt: Receipt,
+  lock: Lock,
+  refresh: RefreshCw,
+  "map-pin": MapPin,
 };
 
 function LandingIconBadge({ name, className = "" }: { name: LandingIcon; className?: string }) {
@@ -132,6 +146,7 @@ export function ProductLanding({
   pdf?: string;
 }) {
   const { content: c, theme } = landing;
+  const { hardware, audiences } = c;
   const contactHref = href(locale, `/contact?product=${slug}`);
   const waHref = whatsappHref(c.whatsappMessage);
   const style = { "--lp-accent": theme.accent, "--lp-soft": theme.soft, "--lp-ink": theme.ink } as CSSProperties;
@@ -165,10 +180,10 @@ export function ProductLanding({
           <div>
             {landing.logo && (
               <img
-                src={landing.logo}
+                src={landing.logo.src}
                 alt={c.breadcrumb.current}
-                width={720}
-                height={162}
+                width={landing.logo.width}
+                height={landing.logo.height}
                 className="h-12 w-auto rounded-xl bg-white px-3 py-2 sm:h-14"
               />
             )}
@@ -208,10 +223,10 @@ export function ProductLanding({
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
             <img
-              src={landing.heroImage}
+              src={landing.heroImage.src}
               alt={c.hero.imageAlt}
-              width={1400}
-              height={1170}
+              width={landing.heroImage.width}
+              height={landing.heroImage.height}
               fetchPriority="high"
               className="h-full w-full object-cover"
             />
@@ -280,9 +295,9 @@ export function ProductLanding({
                     src={spot.image}
                     alt={spot.imageAlt}
                     width={1400}
-                    height={1050}
+                    height={spot.imageAspect === "square" ? 1400 : 1050}
                     loading="lazy"
-                    className="aspect-[4/3] w-full object-cover"
+                    className={`w-full object-cover ${spot.imageAspect === "square" ? "aspect-square" : "aspect-[4/3]"}`}
                   />
                 </div>
               </ScrollReveal>
@@ -343,20 +358,51 @@ export function ProductLanding({
         </Container>
       </section>
 
-      <section className="py-24">
-        <Container>
-          <Heading title={c.hardware.title} subtitle={c.hardware.subtitle} center />
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {c.hardware.items.map((item) => (
-              <li key={item.title} className="rounded-2xl border border-black/[0.06] bg-white p-6 text-center">
-                <LandingIconBadge name={item.icon} className="mx-auto size-12" />
-                <h3 className="mt-4 text-sm font-semibold text-[var(--lp-ink)]">{item.title}</h3>
-                <p className="mt-1 text-sm text-black/55">{item.text}</p>
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </section>
+      {hardware && (
+        <section className="py-24">
+          <Container>
+            <Heading title={hardware.title} subtitle={hardware.subtitle} center />
+            <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {hardware.items.map((item) => (
+                <li key={item.title} className="rounded-2xl border border-black/[0.06] bg-white p-6 text-center">
+                  <LandingIconBadge name={item.icon} className="mx-auto size-12" />
+                  <h3 className="mt-4 text-sm font-semibold text-[var(--lp-ink)]">{item.title}</h3>
+                  <p className="mt-1 text-sm text-black/55">{item.text}</p>
+                </li>
+              ))}
+            </ul>
+          </Container>
+        </section>
+      )}
+
+      {audiences && (
+        <section className="py-24">
+          <Container>
+            <Heading title={audiences.title} subtitle={audiences.subtitle} center />
+            <ul className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
+              {audiences.items.map((item, i) => (
+                <li key={item.title}>
+                  <ScrollReveal delay={i * 60} className="h-full">
+                    <figure className="h-full overflow-hidden rounded-2xl border border-black/[0.06] bg-white">
+                      <img
+                        src={item.image}
+                        alt=""
+                        width={800}
+                        height={600}
+                        loading="lazy"
+                        className="aspect-[4/3] w-full object-cover"
+                      />
+                      <figcaption className="p-4 text-sm font-semibold leading-6 text-[var(--lp-ink)]">
+                        {item.title}
+                      </figcaption>
+                    </figure>
+                  </ScrollReveal>
+                </li>
+              ))}
+            </ul>
+          </Container>
+        </section>
+      )}
 
       <section className="border-t border-black/[0.06] bg-white py-24">
         <Container className="max-w-3xl">

@@ -65,7 +65,7 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
             name: c.breadcrumb.current,
             alternateName: c.seo.alternateName,
             description: c.seo.description,
-            image: landing.heroImage,
+            image: landing.heroImage.src,
             features: c.modules.items.map((item) => item.title),
             breadcrumb: c.breadcrumb,
             faq: c.faq.items,
