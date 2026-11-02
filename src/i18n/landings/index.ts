@@ -38,6 +38,15 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
       ar: () => import("./qr-chief/ar").then((m) => m.default),
     },
   },
+  sdp: {
+    theme: { accent: "#cc6200", soft: "#fff3e6", ink: "#0b2152" },
+    logo: { src: "/images/landing/sdp/logo.png", width: 720, height: 244 },
+    heroImage: { src: "/images/landing/sdp/hero.jpg", width: 1400, height: 778 },
+    content: {
+      fr: () => import("./sdp/fr").then((m) => m.default),
+      ar: () => import("./sdp/ar").then((m) => m.default),
+    },
+  },
 };
 
 export type Landing = Omit<LandingDefinition, "content"> & { content: LandingContent };

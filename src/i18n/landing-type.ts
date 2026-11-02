@@ -46,7 +46,14 @@ export type LandingIcon =
   | "plane"
   | "megaphone"
   | "user"
-  | "pen-tool";
+  | "pen-tool"
+  | "store"
+  | "search"
+  | "credit-card"
+  | "workflow"
+  | "rocket"
+  | "warehouse"
+  | "dashboard";
 
 export interface LandingTheme {
   accent: string;

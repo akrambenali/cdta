@@ -56,6 +56,13 @@ import {
   Type,
   User,
   UtensilsCrossed,
+  CreditCard,
+  LayoutDashboard,
+  Rocket,
+  Search,
+  Store,
+  Warehouse,
+  Workflow,
   type LucideIcon,
 } from "lucide-react";
 import type { Locale } from "@/i18n/config";
@@ -115,6 +122,13 @@ const icons: Record<LandingIcon, LucideIcon> = {
   megaphone: Megaphone,
   user: User,
   "pen-tool": PenTool,
+  store: Store,
+  search: Search,
+  "credit-card": CreditCard,
+  workflow: Workflow,
+  rocket: Rocket,
+  warehouse: Warehouse,
+  dashboard: LayoutDashboard,
 };
 
 function LandingIconBadge({ name, className = "" }: { name: LandingIcon; className?: string }) {
@@ -432,9 +446,11 @@ export function ProductLanding({
                 <li
                   key={item.title}
                   className={
-                    item.image
-                      ? "w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.667rem)] lg:w-[calc(20%-0.8rem)]"
-                      : "w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]"
+                    !item.image
+                      ? "w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]"
+                      : audiences.items.length <= 3
+                        ? "w-full sm:w-[calc(33.333%-0.667rem)]"
+                        : "w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.667rem)] lg:w-[calc(20%-0.8rem)]"
                   }
                 >
                   <ScrollReveal delay={(i % 4) * 60} className="h-full">
