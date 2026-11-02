@@ -25,6 +25,30 @@ Le site est disponible sur [http://localhost:3000](http://localhost:3000) (redir
 2. **Tarifs** — les prix indicatifs dans `src/i18n/dictionaries/fr.ts` et `ar.ts` (champs `priceLabel` / `priceNote` de chaque produit) sont à ajuster.
 3. **Nom de domaine / déploiement** — voir la section suivante.
 
+## SEO et réseaux sociaux
+
+- Balises `title`/`description`, `canonical` et `hreflang` (fr / ar) sur chaque page ; Open Graph et Twitter Card complets.
+- Image de partage (1200×630) générée automatiquement pour l'accueil et chaque produit (`opengraph-image.tsx`, police Cairo dans `assets/fonts`).
+- Données structurées JSON-LD : `Organization`, `SoftwareApplication`, `BreadcrumbList` et `FAQPage` sur les landing pages produit.
+- `sitemap.xml` et `robots.txt` générés (`src/app/sitemap.ts`, `src/app/robots.ts`).
+
+Définissez l'URL publique du site **au moment du build** pour que les liens canoniques, le sitemap et les images de partage pointent vers le bon domaine :
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://www.votre-domaine.dz
+```
+
+Sur Vercel, l'URL de production est détectée automatiquement si cette variable n'est pas définie.
+
+## Landing pages produit
+
+Chaque produit peut avoir une landing page dédiée (`/fr/produits/<slug>`) :
+- contenu par langue dans `src/i18n/landings/<slug>/{fr,ar}.ts` (type `LandingContent`) ;
+- couleurs, logo et visuel déclarés dans `src/i18n/landings/index.ts` ;
+- images dans `public/images/landing/<slug>/`.
+
+Un produit sans landing page garde la fiche produit générique.
+
 ## Formulaire de contact
 
 Chaque soumission est :

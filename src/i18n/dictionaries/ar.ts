@@ -694,7 +694,6 @@ const ar: Dictionary = {
     productsTitle: "المنتجات",
     contactTitle: "اتصل بنا",
     rights: "جميع الحقوق محفوظة.",
-    paymentNote: "الدفع بالدينار الجزائري (دج) ممكن.",
   },
   notFound: {
     title: "الصفحة غير موجودة",

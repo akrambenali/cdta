@@ -25,7 +25,6 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         <div className="sm:col-span-2 lg:col-span-1">
           <Logo locale={locale} className="text-white [&_span:last-child]:text-white" />
           <p className="mt-4 max-w-xs text-sm leading-6 text-white/60">{dict.footer.description}</p>
-          <p className="mt-4 text-xs font-medium text-accent-400">{dict.footer.paymentNote}</p>
         </div>
 
         <div>

@@ -162,7 +162,6 @@ export interface Dictionary {
     productsTitle: string;
     contactTitle: string;
     rights: string;
-    paymentNote: string;
   };
   notFound: {
     title: string;

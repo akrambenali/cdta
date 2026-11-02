@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
+import { pageMetadata } from "@/lib/seo";
 import { productsMeta } from "@/data/products-meta";
 import { href } from "@/lib/href";
 import { Container } from "@/components/container";
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/produits">
   const { lang } = await params;
   if (!isLocale(lang)) return {};
   const dict = await getDictionary(lang);
-  return { title: dict.productsPage.title, description: dict.productsPage.subtitle };
+  return pageMetadata({ locale: lang, path: "/produits", title: dict.productsPage.title, description: dict.productsPage.subtitle });
 }
 
 export default async function ProductsPage({ params }: PageProps<"/[lang]/produits">) {

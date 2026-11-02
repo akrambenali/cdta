@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Check } from "lucide-react";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
+import { pageMetadata } from "@/lib/seo";
 import { href } from "@/lib/href";
 import { Container } from "@/components/container";
 import { Button } from "@/components/button";
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/a-propos">
   const { lang } = await params;
   if (!isLocale(lang)) return {};
   const dict = await getDictionary(lang);
-  return { title: dict.aboutPage.hero.title, description: dict.aboutPage.hero.subtitle };
+  return pageMetadata({ locale: lang, path: "/a-propos", title: dict.aboutPage.hero.title, description: dict.aboutPage.hero.subtitle });
 }
 
 export default async function AboutPage({ params }: PageProps<"/[lang]/a-propos">) {

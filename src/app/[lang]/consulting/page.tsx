@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Check, Target } from "lucide-react";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
+import { pageMetadata } from "@/lib/seo";
 import { href } from "@/lib/href";
 import { Container } from "@/components/container";
 import { Button } from "@/components/button";
@@ -14,7 +15,12 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/consulting
   const { lang } = await params;
   if (!isLocale(lang)) return {};
   const dict = await getDictionary(lang);
-  return { title: dict.consultingPage.hero.title, description: dict.consultingPage.hero.subtitle };
+  return pageMetadata({
+    locale: lang,
+    path: "/consulting",
+    title: dict.consultingPage.hero.title,
+    description: dict.consultingPage.hero.subtitle,
+  });
 }
 
 export default async function ConsultingPage({ params }: PageProps<"/[lang]/consulting">) {

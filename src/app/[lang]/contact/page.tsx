@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Mail, Phone, MessageCircle, MapPin, Wallet } from "lucide-react";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
+import { pageMetadata } from "@/lib/seo";
 import { SITE_CONTACT } from "@/data/contact-info";
 import { Container } from "@/components/container";
 import { ContactForm } from "@/components/contact-form";
@@ -11,7 +12,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/contact">)
   const { lang } = await params;
   if (!isLocale(lang)) return {};
   const dict = await getDictionary(lang);
-  return { title: dict.contactPage.hero.title, description: dict.contactPage.hero.subtitle };
+  return pageMetadata({ locale: lang, path: "/contact", title: dict.contactPage.hero.title, description: dict.contactPage.hero.subtitle });
 }
 
 export default async function ContactPage({ params, searchParams }: PageProps<"/[lang]/contact">) {

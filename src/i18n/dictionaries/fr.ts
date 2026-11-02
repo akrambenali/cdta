@@ -755,7 +755,6 @@ const fr: Dictionary = {
     productsTitle: "Produits",
     contactTitle: "Contact",
     rights: "Tous droits réservés.",
-    paymentNote: "Paiement en dinars algériens (DA) possible.",
   },
   notFound: {
     title: "Page introuvable",

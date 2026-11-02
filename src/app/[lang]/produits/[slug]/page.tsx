@@ -11,6 +11,11 @@ import { Button } from "@/components/button";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { Icon } from "@/components/icon-map";
 import { ProductCard } from "@/components/product-card";
+import { ProductLanding } from "@/components/landing/product-landing";
+import { JsonLd } from "@/components/json-ld";
+import { getLanding } from "@/i18n/landings";
+import { pageMetadata } from "@/lib/seo";
+import { productStructuredData } from "@/lib/structured-data";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => productSlugs.map((slug) => ({ lang, slug })));
@@ -23,9 +28,17 @@ function isProductSlug(value: string): value is ProductSlug {
 export async function generateMetadata({ params }: PageProps<"/[lang]/produits/[slug]">): Promise<Metadata> {
   const { lang, slug } = await params;
   if (!isLocale(lang) || !isProductSlug(slug)) return {};
+  const path = `/produits/${slug}`;
+  const landing = await getLanding(slug, lang);
+  if (landing) {
+    const { seo } = landing.content;
+    const metadata = pageMetadata({ locale: lang, path, title: seo.title, description: seo.description, keywords: seo.keywords });
+    return { ...metadata, title: { absolute: seo.title } };
+  }
+
   const dict = await getDictionary(lang);
   const product = dict.products[slug];
-  return { title: product.title, description: product.shortDescription };
+  return pageMetadata({ locale: lang, path, title: product.title, description: product.shortDescription });
 }
 
 export default async function ProductDetailPage({ params }: PageProps<"/[lang]/produits/[slug]">) {
@@ -39,8 +52,42 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
   const meta = productsMeta.find((m) => m.slug === slug)!;
   const otherProducts = productsMeta.filter((m) => m.slug !== slug).slice(0, 3);
 
+  const landing = await getLanding(slug, lang);
+  if (landing) {
+    const c = landing.content;
+    return (
+      <>
+        <ProductLanding locale={lang} slug={slug} landing={landing} pdf={meta.pdf} />
+        <JsonLd
+          data={productStructuredData({
+            locale: lang,
+            slug,
+            name: c.breadcrumb.current,
+            alternateName: c.seo.alternateName,
+            description: c.seo.description,
+            image: landing.heroImage,
+            features: c.modules.items.map((item) => item.title),
+            breadcrumb: c.breadcrumb,
+            faq: c.faq.items,
+          })}
+        />
+      </>
+    );
+  }
+
   return (
     <>
+      <JsonLd
+        data={productStructuredData({
+          locale: lang,
+          slug,
+          name: product.title,
+          description: product.shortDescription,
+          image: meta.image,
+          features: product.features,
+          breadcrumb: { home: dict.nav.home, products: dict.nav.products, current: product.title },
+        })}
+      />
       <section className="border-b border-brand-900/8 bg-brand-950 py-16 sm:py-20">
         <Container>
           <Link
