@@ -167,7 +167,7 @@ const content: LandingContent = {
     subtitle: "Au lieu de cahiers dispersés ou de plusieurs programmes séparés, chaque étape alimente la suivante.",
     steps: ["Produit", "Prix", "Vente", "Facture", "Stock", "Achats", "Trésorerie", "Rapports", "Balance", "Sauvegarde"],
   },
-  hardware: {
+  cards: {
     title: "Compatible avec l'équipement de votre comptoir",
     subtitle: "BOUCHLI est une application de bureau pour Windows qui s'intègre au matériel courant des boucheries.",
     items: [

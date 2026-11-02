@@ -22,7 +22,31 @@ export type LandingIcon =
   | "receipt"
   | "lock"
   | "refresh"
-  | "map-pin";
+  | "map-pin"
+  | "link"
+  | "type"
+  | "eye"
+  | "palette"
+  | "shapes"
+  | "scan"
+  | "grid"
+  | "image"
+  | "download"
+  | "save"
+  | "pencil"
+  | "folder"
+  | "globe"
+  | "infinity"
+  | "calendar-x"
+  | "qr-code"
+  | "cloud-upload"
+  | "utensils"
+  | "building"
+  | "briefcase"
+  | "plane"
+  | "megaphone"
+  | "user"
+  | "pen-tool";
 
 export interface LandingTheme {
   accent: string;
@@ -76,7 +100,7 @@ export interface LandingContent {
   };
   spotlights: LandingSpotlight[];
   workflow: { title: string; subtitle: string; steps: string[] };
-  hardware?: {
+  cards?: {
     title: string;
     subtitle: string;
     items: { icon: LandingIcon; title: string; text: string }[];
@@ -84,7 +108,7 @@ export interface LandingContent {
   audiences?: {
     title: string;
     subtitle: string;
-    items: { image: string; title: string }[];
+    items: { image?: string; icon?: LandingIcon; title: string; text?: string }[];
   };
   faq: { title: string; subtitle: string; items: { q: string; a: string }[] };
   cta: { title: string; subtitle: string; primary: string; whatsapp: string; brochure: string };

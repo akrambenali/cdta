@@ -29,6 +29,15 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
       ar: () => import("./keswa/ar").then((m) => m.default),
     },
   },
+  "qr-chief": {
+    theme: { accent: "#1d4ed8", soft: "#eaf0ff", ink: "#0b1a4a" },
+    logo: { src: "/images/landing/qr-chief/logo.png", width: 720, height: 209 },
+    heroImage: { src: "/images/landing/qr-chief/hero.jpg", width: 1181, height: 1377 },
+    content: {
+      fr: () => import("./qr-chief/fr").then((m) => m.default),
+      ar: () => import("./qr-chief/ar").then((m) => m.default),
+    },
+  },
 };
 
 export type Landing = Omit<LandingDefinition, "content"> & { content: LandingContent };

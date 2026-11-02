@@ -32,6 +32,30 @@ import {
   Undo2,
   Users,
   WifiOff,
+  Briefcase,
+  Building2,
+  CalendarX,
+  CloudUpload,
+  Download,
+  Eye,
+  FolderOpen,
+  Globe,
+  Grid2x2,
+  Image as ImageIcon,
+  Infinity as InfinityIcon,
+  Link2,
+  Megaphone,
+  Palette,
+  PenTool,
+  Pencil,
+  Plane,
+  QrCode,
+  Save,
+  Scan,
+  Shapes,
+  Type,
+  User,
+  UtensilsCrossed,
   type LucideIcon,
 } from "lucide-react";
 import type { Locale } from "@/i18n/config";
@@ -67,6 +91,30 @@ const icons: Record<LandingIcon, LucideIcon> = {
   lock: Lock,
   refresh: RefreshCw,
   "map-pin": MapPin,
+  link: Link2,
+  type: Type,
+  eye: Eye,
+  palette: Palette,
+  shapes: Shapes,
+  scan: Scan,
+  grid: Grid2x2,
+  image: ImageIcon,
+  download: Download,
+  save: Save,
+  pencil: Pencil,
+  folder: FolderOpen,
+  globe: Globe,
+  infinity: InfinityIcon,
+  "calendar-x": CalendarX,
+  "qr-code": QrCode,
+  "cloud-upload": CloudUpload,
+  utensils: UtensilsCrossed,
+  building: Building2,
+  briefcase: Briefcase,
+  plane: Plane,
+  megaphone: Megaphone,
+  user: User,
+  "pen-tool": PenTool,
 };
 
 function LandingIconBadge({ name, className = "" }: { name: LandingIcon; className?: string }) {
@@ -146,7 +194,7 @@ export function ProductLanding({
   pdf?: string;
 }) {
   const { content: c, theme } = landing;
-  const { hardware, audiences } = c;
+  const { cards, audiences } = c;
   const contactHref = href(locale, `/contact?product=${slug}`);
   const waHref = whatsappHref(c.whatsappMessage);
   const style = { "--lp-accent": theme.accent, "--lp-soft": theme.soft, "--lp-ink": theme.ink } as CSSProperties;
@@ -358,12 +406,12 @@ export function ProductLanding({
         </Container>
       </section>
 
-      {hardware && (
+      {cards && (
         <section className="py-24">
           <Container>
-            <Heading title={hardware.title} subtitle={hardware.subtitle} center />
+            <Heading title={cards.title} subtitle={cards.subtitle} center />
             <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {hardware.items.map((item) => (
+              {cards.items.map((item) => (
                 <li key={item.title} className="rounded-2xl border border-black/[0.06] bg-white p-6 text-center">
                   <LandingIconBadge name={item.icon} className="mx-auto size-12" />
                   <h3 className="mt-4 text-sm font-semibold text-[var(--lp-ink)]">{item.title}</h3>
@@ -379,21 +427,33 @@ export function ProductLanding({
         <section className="py-24">
           <Container>
             <Heading title={audiences.title} subtitle={audiences.subtitle} center />
-            <ul className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
+            <ul className="mt-12 flex flex-wrap justify-center gap-4">
               {audiences.items.map((item, i) => (
-                <li key={item.title}>
-                  <ScrollReveal delay={i * 60} className="h-full">
+                <li
+                  key={item.title}
+                  className={
+                    item.image
+                      ? "w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.667rem)] lg:w-[calc(20%-0.8rem)]"
+                      : "w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]"
+                  }
+                >
+                  <ScrollReveal delay={(i % 4) * 60} className="h-full">
                     <figure className="h-full overflow-hidden rounded-2xl border border-black/[0.06] bg-white">
-                      <img
-                        src={item.image}
-                        alt=""
-                        width={800}
-                        height={600}
-                        loading="lazy"
-                        className="aspect-[4/3] w-full object-cover"
-                      />
-                      <figcaption className="p-4 text-sm font-semibold leading-6 text-[var(--lp-ink)]">
-                        {item.title}
+                      {item.image ? (
+                        <img
+                          src={item.image}
+                          alt=""
+                          width={800}
+                          height={600}
+                          loading="lazy"
+                          className="aspect-[4/3] w-full object-cover"
+                        />
+                      ) : (
+                        item.icon && <LandingIconBadge name={item.icon} className="mx-5 mt-5" />
+                      )}
+                      <figcaption className="p-5">
+                        <span className="block text-sm font-semibold leading-6 text-[var(--lp-ink)]">{item.title}</span>
+                        {item.text && <span className="mt-1 block text-sm leading-6 text-black/55">{item.text}</span>}
                       </figcaption>
                     </figure>
                   </ScrollReveal>
