@@ -65,6 +65,15 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
       ar: () => import("./rihla/ar").then((m) => m.default),
     },
   },
+  maqam: {
+    theme: { accent: "#94701f", soft: "#f6efe0", ink: "#0d3b30" },
+    logo: { src: "/images/landing/maqam/logo.png", width: 720, height: 304 },
+    heroImage: { src: "/images/landing/maqam/hero.jpg", width: 1400, height: 669 },
+    content: {
+      fr: () => import("./maqam/fr").then((m) => m.default),
+      ar: () => import("./maqam/ar").then((m) => m.default),
+    },
+  },
 };
 
 export type Landing = Omit<LandingDefinition, "content"> & { content: LandingContent };

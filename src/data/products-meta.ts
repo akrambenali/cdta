@@ -68,7 +68,13 @@ export const productsMeta: ProductMeta[] = [
     featured: true,
   },
   { slug: "vola", icon: "car", image: "/images/products/vola.svg" },
-  { slug: "maqam", icon: "hotel", image: "/images/products/maqam.svg", demoUrl: "https://maqam-eta.vercel.app/portal" },
+  {
+    slug: "maqam",
+    icon: "hotel",
+    image: "/images/products/maqam.svg",
+    pdf: "/docs/maqam.pdf",
+    demoUrl: "https://maqam-eta.vercel.app/portal",
+  },
   {
     slug: "rihla",
     icon: "plane",

@@ -80,6 +80,10 @@ import {
   Sparkles,
   Star,
   UserPlus,
+  ConciergeBell,
+  LogIn,
+  LogOut,
+  Wrench,
   type LucideIcon,
 } from "lucide-react";
 import type { Locale } from "@/i18n/config";
@@ -162,6 +166,10 @@ const icons: Record<LandingIcon, LucideIcon> = {
   sparkles: Sparkles,
   "user-plus": UserPlus,
   compass: Compass,
+  "log-in": LogIn,
+  "log-out": LogOut,
+  wrench: Wrench,
+  concierge: ConciergeBell,
 };
 
 function LandingIconBadge({ name, className = "" }: { name: LandingIcon; className?: string }) {

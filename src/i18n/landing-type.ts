@@ -69,7 +69,11 @@ export type LandingIcon =
   | "star"
   | "sparkles"
   | "user-plus"
-  | "compass";
+  | "compass"
+  | "log-in"
+  | "log-out"
+  | "wrench"
+  | "concierge";
 
 export interface LandingTheme {
   accent: string;
