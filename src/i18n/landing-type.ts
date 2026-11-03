@@ -62,7 +62,14 @@ export type LandingIcon =
   | "book-open"
   | "settings"
   | "bell"
-  | "baby";
+  | "baby"
+  | "bed"
+  | "headset"
+  | "bus"
+  | "star"
+  | "sparkles"
+  | "user-plus"
+  | "compass";
 
 export interface LandingTheme {
   accent: string;
@@ -99,6 +106,7 @@ export interface LandingContent {
     ctaPrimary: string;
     ctaWhatsapp: string;
     ctaBrochure: string;
+    ctaDemo?: string;
     badges: string[];
     imageAlt: string;
   };

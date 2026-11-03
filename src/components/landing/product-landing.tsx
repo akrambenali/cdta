@@ -72,6 +72,14 @@ import {
   Presentation,
   School,
   Settings,
+  ExternalLink,
+  BedDouble,
+  BusFront,
+  Compass,
+  Headset,
+  Sparkles,
+  Star,
+  UserPlus,
   type LucideIcon,
 } from "lucide-react";
 import type { Locale } from "@/i18n/config";
@@ -147,6 +155,13 @@ const icons: Record<LandingIcon, LucideIcon> = {
   settings: Settings,
   bell: Bell,
   baby: Baby,
+  bed: BedDouble,
+  headset: Headset,
+  bus: BusFront,
+  star: Star,
+  sparkles: Sparkles,
+  "user-plus": UserPlus,
+  compass: Compass,
 };
 
 function LandingIconBadge({ name, className = "" }: { name: LandingIcon; className?: string }) {
@@ -219,11 +234,13 @@ export function ProductLanding({
   slug,
   landing,
   pdf,
+  demoUrl,
 }: {
   locale: Locale;
   slug: string;
   landing: Landing;
   pdf?: string;
+  demoUrl?: string;
 }) {
   const { content: c, theme } = landing;
   const { cards, audiences } = c;
@@ -278,6 +295,12 @@ export function ProductLanding({
                 <MessageCircle className="size-4" aria-hidden />
                 {c.hero.ctaWhatsapp}
               </OutlineLink>
+              {demoUrl && c.hero.ctaDemo && (
+                <OutlineLink to={demoUrl} external>
+                  <ExternalLink className="size-4" aria-hidden />
+                  {c.hero.ctaDemo}
+                </OutlineLink>
+              )}
             </div>
             {pdf && (
               <a
@@ -465,7 +488,9 @@ export function ProductLanding({
                   key={item.title}
                   className={
                     !item.image
-                      ? "w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]"
+                      ? item.text
+                        ? "w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]"
+                        : "w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]"
                       : audiences.items.length <= 3
                         ? "w-full sm:w-[calc(33.333%-0.667rem)]"
                         : "w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.667rem)] lg:w-[calc(20%-0.8rem)]"

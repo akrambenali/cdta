@@ -69,7 +69,14 @@ export const productsMeta: ProductMeta[] = [
   },
   { slug: "vola", icon: "car", image: "/images/products/vola.svg" },
   { slug: "maqam", icon: "hotel", image: "/images/products/maqam.svg", demoUrl: "https://maqam-eta.vercel.app/portal" },
-  { slug: "rihla", icon: "plane", image: "/images/products/rihla.svg", demoUrl: "https://rihla.i-ite.com/", featured: true },
+  {
+    slug: "rihla",
+    icon: "plane",
+    image: "/images/products/rihla.svg",
+    pdf: "/docs/rihla.pdf",
+    demoUrl: "https://rihla.i-ite.com/",
+    featured: true,
+  },
   {
     slug: "mamlakat-al-hijab",
     icon: "shopping-bag",

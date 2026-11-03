@@ -56,6 +56,15 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
       ar: () => import("./tapsit-school/ar").then((m) => m.default),
     },
   },
+  rihla: {
+    theme: { accent: "#9a6b17", soft: "#f8f1e4", ink: "#0b1f4b" },
+    logo: { src: "/images/landing/rihla/logo.png", width: 720, height: 271 },
+    heroImage: { src: "/images/landing/rihla/hero.jpg", width: 1400, height: 819 },
+    content: {
+      fr: () => import("./rihla/fr").then((m) => m.default),
+      ar: () => import("./rihla/ar").then((m) => m.default),
+    },
+  },
 };
 
 export type Landing = Omit<LandingDefinition, "content"> & { content: LandingContent };

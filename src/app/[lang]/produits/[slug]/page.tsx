@@ -57,7 +57,7 @@ export default async function ProductDetailPage({ params }: PageProps<"/[lang]/p
     const c = landing.content;
     return (
       <>
-        <ProductLanding locale={lang} slug={slug} landing={landing} pdf={meta.pdf} />
+        <ProductLanding locale={lang} slug={slug} landing={landing} pdf={meta.pdf} demoUrl={meta.demoUrl} />
         <JsonLd
           data={productStructuredData({
             locale: lang,
