@@ -1,4 +1,5 @@
 import type { ProductSlug } from "@/data/products-meta";
+import type { ProjectSlug } from "@/data/projects";
 
 export interface ProductContent {
   title: string;
@@ -13,6 +14,14 @@ export interface ProductContent {
     forWho: string;
     includes: string[];
   };
+}
+
+export interface ProjectContent {
+  name: string;
+  type: string;
+  sector: string;
+  description: string;
+  deliverables: string[];
 }
 
 export interface CardLinkContent {
@@ -35,6 +44,7 @@ export interface Dictionary {
   nav: {
     home: string;
     products: string;
+    projects: string;
     consulting: string;
     about: string;
     contact: string;
@@ -78,6 +88,20 @@ export interface Dictionary {
     title: string;
     subtitle: string;
   };
+  projectsPreview: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    viewAll: string;
+  };
+  projectsPage: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    visitSite: string;
+    cta: { title: string; subtitle: string; primary: string };
+  };
+  projects: Record<ProjectSlug, ProjectContent>;
   products: Record<ProductSlug, ProductContent>;
   consultingCard: CardLinkContent;
   productDetail: {

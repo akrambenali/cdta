@@ -3,7 +3,7 @@ import { locales } from "@/i18n/config";
 import { productsMeta } from "@/data/products-meta";
 import { SITE_URL } from "@/lib/site";
 
-const staticPaths = ["", "/produits", "/consulting", "/a-propos", "/contact"];
+const staticPaths = ["", "/produits", "/realisations", "/consulting", "/a-propos", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [...staticPaths, ...productsMeta.map((p) => `/produits/${p.slug}`)];

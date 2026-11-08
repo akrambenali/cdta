@@ -6,6 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 import { Hero } from "@/components/sections/hero";
 import { WhyUs } from "@/components/sections/why-us";
 import { ProductsPreview } from "@/components/sections/products-preview";
+import { ProjectsPreview } from "@/components/sections/projects-preview";
 import { CtaBand } from "@/components/sections/cta-band";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">): Promise<Metadata> {
@@ -32,6 +33,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       <Hero locale={lang} dict={dict} />
       <WhyUs dict={dict} />
       <ProductsPreview locale={lang} dict={dict} />
+      <ProjectsPreview locale={lang} dict={dict} />
       <CtaBand
         locale={lang}
         title={dict.ctaBand.title}

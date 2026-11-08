@@ -23,6 +23,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const navItems = [
     { label: dict.nav.home, path: "/" },
     { label: dict.nav.products, path: "/produits" },
+    { label: dict.nav.projects, path: "/realisations" },
     { label: dict.nav.consulting, path: "/consulting" },
     { label: dict.nav.about, path: "/a-propos" },
     { label: dict.nav.contact, path: "/contact" },
@@ -33,7 +34,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 lg:px-8">
         <Logo locale={locale} />
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex xl:gap-8">
           {navItems.map((item) => {
             const target = href(locale, item.path);
             const isActive = pathname === target;

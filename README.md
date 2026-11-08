@@ -16,6 +16,7 @@ Le site est disponible sur [http://localhost:3000](http://localhost:3000) (redir
 - `src/app/[lang]/...` — pages du site, déclinées en `fr` et `ar` (RTL automatique).
 - `src/i18n/dictionaries/{fr,ar}.ts` — tout le contenu texte du site, par langue.
 - `src/data/products-meta.ts` — liste des produits du catalogue (slug + icône).
+- `src/data/projects.ts` — projets réalisés pour des clients (page « Réalisations », lien vers le site en ligne) ; textes dans la clé `projects` des dictionnaires.
 - `src/data/contact-info.ts` — coordonnées affichées sur le site (**à personnaliser**, voir ci-dessous).
 - `src/app/api/contact/route.ts` — traitement du formulaire de contact.
 

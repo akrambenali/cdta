@@ -14,6 +14,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const navItems = [
     { label: dict.nav.home, path: "/" },
     { label: dict.nav.products, path: "/produits" },
+    { label: dict.nav.projects, path: "/realisations" },
     { label: dict.nav.consulting, path: "/consulting" },
     { label: dict.nav.about, path: "/a-propos" },
     { label: dict.nav.contact, path: "/contact" },

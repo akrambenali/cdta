@@ -7,11 +7,7 @@ export type ProductSlug =
   | "vola"
   | "maqam"
   | "rihla"
-  | "mamlakat-al-hijab"
-  | "computer-store"
-  | "ite-digital-solutions"
-  | "tourism-algeria"
-  | "enresol";
+  | "computer-store";
 
 export const productSlugs: ProductSlug[] = [
   "sdp",
@@ -22,11 +18,7 @@ export const productSlugs: ProductSlug[] = [
   "vola",
   "maqam",
   "rihla",
-  "mamlakat-al-hijab",
   "computer-store",
-  "ite-digital-solutions",
-  "tourism-algeria",
-  "enresol",
 ];
 
 type ProductIcon =
@@ -38,11 +30,7 @@ type ProductIcon =
   | "car"
   | "hotel"
   | "plane"
-  | "shopping-bag"
-  | "cpu"
-  | "building-2"
-  | "map-pin"
-  | "sun";
+  | "cpu";
 
 interface ProductMeta {
   slug: ProductSlug;
@@ -84,28 +72,9 @@ export const productsMeta: ProductMeta[] = [
     featured: true,
   },
   {
-    slug: "mamlakat-al-hijab",
-    icon: "shopping-bag",
-    image: "/images/products/mamlakat-al-hijab.svg",
-    demoUrl: "https://mamlakat-aljilbab.vercel.app",
-  },
-  {
     slug: "computer-store",
     icon: "cpu",
     image: "/images/products/computer-store.svg",
     demoUrl: "https://akgpu.itelearning-dz.workers.dev/",
   },
-  {
-    slug: "ite-digital-solutions",
-    icon: "building-2",
-    image: "/images/products/ite-digital-solutions.svg",
-    demoUrl: "https://www.i-ite.com/",
-  },
-  {
-    slug: "tourism-algeria",
-    icon: "map-pin",
-    image: "/images/products/tourism-algeria.svg",
-    demoUrl: "https://tourism-algeria.vercel.app/",
-  },
-  { slug: "enresol", icon: "sun", image: "/images/products/enresol.svg", demoUrl: "https://enresol.net/" },
 ];
