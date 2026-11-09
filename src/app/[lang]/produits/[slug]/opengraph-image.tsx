@@ -37,6 +37,7 @@ export default async function Image({ params }: { params: Params; id: Promise<st
     title: product.title,
     subtitle: product.tagline,
     image: landing?.heroImage.src ?? meta.image,
+    imageAspect: landing ? landing.heroImage.width / landing.heroImage.height : meta.image.endsWith(".svg") ? 4 / 3 : 3 / 2,
     rtl: lang === "ar",
     background: landing?.theme.ink,
     accent: landing?.theme.accent,

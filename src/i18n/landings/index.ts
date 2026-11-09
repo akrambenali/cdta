@@ -14,7 +14,7 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
   bouchli: {
     theme: { accent: "#d7141a", soft: "#fdecec", ink: "#141414" },
     logo: { src: "/images/landing/bouchli/logo.png", width: 720, height: 162 },
-    heroImage: { src: "/images/products/bouchli.jpg", width: 1400, height: 1170 },
+    heroImage: { src: "/images/products/bouchli-catalogue.jpg", width: 1200, height: 800 },
     content: {
       fr: () => import("./bouchli/fr").then((m) => m.default),
       ar: () => import("./bouchli/ar").then((m) => m.default),
@@ -23,7 +23,7 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
   keswa: {
     theme: { accent: "#0f8f86", soft: "#e7f5f4", ink: "#0d2747" },
     logo: { src: "/images/landing/keswa/logo.png", width: 720, height: 225 },
-    heroImage: { src: "/images/landing/keswa/hero.jpg", width: 1400, height: 1430 },
+    heroImage: { src: "/images/products/keswa-catalogue.jpg", width: 1200, height: 800 },
     content: {
       fr: () => import("./keswa/fr").then((m) => m.default),
       ar: () => import("./keswa/ar").then((m) => m.default),
@@ -41,7 +41,7 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
   sdp: {
     theme: { accent: "#cc6200", soft: "#fff3e6", ink: "#0b2152" },
     logo: { src: "/images/landing/sdp/logo.png", width: 720, height: 244 },
-    heroImage: { src: "/images/landing/sdp/hero.jpg", width: 1400, height: 778 },
+    heroImage: { src: "/images/products/sdp-catalogue.jpg", width: 1200, height: 800 },
     content: {
       fr: () => import("./sdp/fr").then((m) => m.default),
       ar: () => import("./sdp/ar").then((m) => m.default),
@@ -50,7 +50,7 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
   "tapsit-school": {
     theme: { accent: "#0b7d74", soft: "#e6f6f4", ink: "#0c2461" },
     logo: { src: "/images/landing/tapsit-school/logo.png", width: 720, height: 208 },
-    heroImage: { src: "/images/landing/tapsit-school/hero.jpg", width: 949, height: 938 },
+    heroImage: { src: "/images/products/tapsit-school-catalogue.jpg", width: 1200, height: 800 },
     content: {
       fr: () => import("./tapsit-school/fr").then((m) => m.default),
       ar: () => import("./tapsit-school/ar").then((m) => m.default),
@@ -59,7 +59,7 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
   rihla: {
     theme: { accent: "#9a6b17", soft: "#f8f1e4", ink: "#0b1f4b" },
     logo: { src: "/images/landing/rihla/logo.png", width: 720, height: 271 },
-    heroImage: { src: "/images/landing/rihla/hero.jpg", width: 1400, height: 819 },
+    heroImage: { src: "/images/products/rihla-catalogue.jpg", width: 1200, height: 800 },
     content: {
       fr: () => import("./rihla/fr").then((m) => m.default),
       ar: () => import("./rihla/ar").then((m) => m.default),
@@ -68,7 +68,7 @@ const landings: Partial<Record<ProductSlug, LandingDefinition>> = {
   maqam: {
     theme: { accent: "#94701f", soft: "#f6efe0", ink: "#0d3b30" },
     logo: { src: "/images/landing/maqam/logo.png", width: 720, height: 304 },
-    heroImage: { src: "/images/landing/maqam/hero.jpg", width: 1400, height: 669 },
+    heroImage: { src: "/images/products/maqam-catalogue.jpg", width: 1200, height: 800 },
     content: {
       fr: () => import("./maqam/fr").then((m) => m.default),
       ar: () => import("./maqam/ar").then((m) => m.default),

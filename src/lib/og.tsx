@@ -39,6 +39,7 @@ export async function renderOgImage({
   title,
   subtitle,
   image,
+  imageAspect = 3 / 2,
   rtl,
   background = "#0f211d",
   accent = "#34d399",
@@ -46,12 +47,16 @@ export async function renderOgImage({
   title: string;
   subtitle: string;
   image?: string;
+  /** Width / height of the image, so landscape visuals are framed without cropping. */
+  imageAspect?: number;
   rtl: boolean;
   background?: string;
   accent?: string;
 }) {
   const [bold, extraBold] = await fontsPromise;
   const imageSrc = image ? await publicImageDataUri(image) : null;
+  const imageWidth = 520;
+  const imageHeight = Math.min(550, Math.round(imageWidth / imageAspect));
 
   return new ImageResponse(
     (
@@ -91,13 +96,21 @@ export async function renderOgImage({
           />
         </div>
         {imageSrc && (
-          <div style={{ display: "flex", width: 560, height: "100%", padding: rtl ? "40px 0 40px 40px" : "40px 40px 40px 0" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              width: 560,
+              height: "100%",
+              padding: rtl ? "40px 0 40px 40px" : "40px 40px 40px 0",
+            }}
+          >
             <img
               src={imageSrc}
               alt=""
-              width={520}
-              height={550}
-              style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 28 }}
+              width={imageWidth}
+              height={imageHeight}
+              style={{ width: imageWidth, height: imageHeight, objectFit: "cover", borderRadius: 28 }}
             />
           </div>
         )}
