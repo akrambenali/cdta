@@ -59,14 +59,14 @@ export const productsMeta: ProductMeta[] = [
   {
     slug: "maqam",
     icon: "hotel",
-    image: "/images/products/maqam.svg",
+    image: "/images/products/maqam-catalogue.jpg",
     pdf: "/docs/maqam.pdf",
     demoUrl: "https://maqam-eta.vercel.app/portal",
   },
   {
     slug: "rihla",
     icon: "plane",
-    image: "/images/products/rihla.svg",
+    image: "/images/products/rihla-catalogue.jpg",
     pdf: "/docs/rihla.pdf",
     demoUrl: "https://rihla.i-ite.com/",
     featured: true,
