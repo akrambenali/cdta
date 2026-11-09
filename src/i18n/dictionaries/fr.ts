@@ -424,30 +424,6 @@ const fr: Dictionary = {
         ],
       },
     },
-    "computer-store": {
-      title: "Boutique matériel informatique",
-      tagline: "Vente en ligne d'équipements informatiques",
-      shortDescription: "Boutique en ligne pour la vente de matériel et d'équipements informatiques.",
-      features: [
-        "Catalogue de produits informatiques",
-        "Fiches produits détaillées",
-        "Panier et tunnel de commande",
-        "Boutique accessible en ligne",
-      ],
-      priceLabel: "Sur devis",
-      priceNote: "Tarification selon votre projet de boutique",
-      detail: {
-        intro:
-          "Boutique en ligne développée pour la vente de matériel informatique, avec un catalogue organisé et des fiches produits claires.",
-        benefits: [
-          { title: "Catalogue organisé", description: "Des produits informatiques présentés de façon claire et structurée." },
-          { title: "Parcours d'achat simple", description: "Du catalogue au panier, une expérience fluide pour les clients." },
-          { title: "Facile à gérer", description: "Un back-office pour ajouter et mettre à jour les produits facilement." },
-        ],
-        forWho: "Commerces de matériel et d'équipements informatiques souhaitant vendre en ligne.",
-        includes: ["Mise en place du catalogue produits", "Configuration de la boutique", "Support technique"],
-      },
-    },
   },
   projectsPreview: {
     eyebrow: "Réalisations",
@@ -501,6 +477,14 @@ const fr: Dictionary = {
       description:
         "Boutique en ligne pour la vente de hijabs et de produits de mode : catalogue soigné, panier et parcours de commande pensés pour le mobile.",
       deliverables: ["Catalogue produits", "Panier et commande", "Optimisée pour le mobile"],
+    },
+    akgpu: {
+      name: "AKGPU",
+      type: "Boutique en ligne",
+      sector: "Matériel informatique",
+      description:
+        "Boutique en ligne de matériel et d'équipements informatiques : catalogue de produits, fiches détaillées, panier et parcours de commande.",
+      deliverables: ["Catalogue informatique", "Fiches produits détaillées", "Panier et commande"],
     },
   },
   consultingCard: {
@@ -670,7 +654,6 @@ const fr: Dictionary = {
         { value: "vola", label: "Vôla — Gestion d'auto-école" },
         { value: "maqam", label: "MAQAM — Gestion hôtelière" },
         { value: "rihla", label: "RIHLA — Gestion d'agence de voyage" },
-        { value: "computer-store", label: "Boutique matériel informatique" },
         { value: "site-sur-mesure", label: "Site web ou boutique en ligne sur mesure" },
         { value: "consulting", label: "Consulting en transformation digitale" },
         { value: "autre", label: "Autre / je ne sais pas encore" },

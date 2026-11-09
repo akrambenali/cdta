@@ -1,6 +1,6 @@
 import type { IconName } from "@/components/icon-map";
 
-export type ProjectSlug = "enresol" | "tourism-algeria" | "ite-digital-solutions" | "mamlakat-al-hijab";
+export type ProjectSlug = "enresol" | "tourism-algeria" | "ite-digital-solutions" | "mamlakat-al-hijab" | "akgpu";
 
 export interface ProjectMeta {
   slug: ProjectSlug;
@@ -28,6 +28,12 @@ export const projectsMeta: ProjectMeta[] = [
     icon: "shopping-bag",
     image: "/images/projects/mamlakat-al-hijab.svg",
     url: "https://mamlakat-aljilbab.vercel.app",
+  },
+  {
+    slug: "akgpu",
+    icon: "cpu",
+    image: "/images/projects/akgpu.svg",
+    url: "https://akgpu.itelearning-dz.workers.dev/",
   },
 ];
 

@@ -25,7 +25,7 @@ export function ProjectsPreview({ locale, dict }: { locale: Locale; dict: Dictio
           </Button>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projectsMeta.map((meta, i) => (
             <ScrollReveal key={meta.slug} delay={i * 80}>
               <ProjectCard meta={meta} project={dict.projects[meta.slug]} visitLabel={dict.projectsPage.visitSite} />

@@ -6,8 +6,7 @@ export type ProductSlug =
   | "tapsit-school"
   | "vola"
   | "maqam"
-  | "rihla"
-  | "computer-store";
+  | "rihla";
 
 export const productSlugs: ProductSlug[] = [
   "sdp",
@@ -18,7 +17,6 @@ export const productSlugs: ProductSlug[] = [
   "vola",
   "maqam",
   "rihla",
-  "computer-store",
 ];
 
 type ProductIcon =
@@ -29,8 +27,7 @@ type ProductIcon =
   | "graduation-cap"
   | "car"
   | "hotel"
-  | "plane"
-  | "cpu";
+  | "plane";
 
 interface ProductMeta {
   slug: ProductSlug;
@@ -44,15 +41,15 @@ interface ProductMeta {
 }
 
 export const productsMeta: ProductMeta[] = [
-  { slug: "sdp", icon: "network", image: "/images/products/sdp-catalogue.jpg", pdf: "/docs/sdp.pdf", featured: true },
-  { slug: "keswa", icon: "shirt", image: "/images/products/keswa-catalogue.jpg", pdf: "/docs/keswa.pdf", featured: true },
-  { slug: "bouchli", icon: "beef", image: "/images/products/bouchli-catalogue.jpg", pdf: "/docs/bouchli.pdf" },
-  { slug: "qr-chief", icon: "qr-code", image: "/images/products/qr-chief.jpg", pdf: "/docs/qr-chief.pdf" },
+  { slug: "sdp", icon: "network", image: "/images/products/sdp-catalogue.jpg", pdf: "/docs/sdp-brochure.pdf", featured: true },
+  { slug: "keswa", icon: "shirt", image: "/images/products/keswa-catalogue.jpg", pdf: "/docs/keswa-brochure.pdf", featured: true },
+  { slug: "bouchli", icon: "beef", image: "/images/products/bouchli-catalogue.jpg", pdf: "/docs/bouchli-brochure.pdf" },
+  { slug: "qr-chief", icon: "qr-code", image: "/images/products/qr-chief.jpg", pdf: "/docs/qr-chief-brochure.pdf" },
   {
     slug: "tapsit-school",
     icon: "graduation-cap",
     image: "/images/products/tapsit-school-catalogue.jpg",
-    pdf: "/docs/tapsit-school.pdf",
+    pdf: "/docs/tapsit-school-brochure.pdf",
     featured: true,
   },
   { slug: "vola", icon: "car", image: "/images/products/vola-catalogue.jpg" },
@@ -60,21 +57,15 @@ export const productsMeta: ProductMeta[] = [
     slug: "maqam",
     icon: "hotel",
     image: "/images/products/maqam-catalogue.jpg",
-    pdf: "/docs/maqam.pdf",
+    pdf: "/docs/maqam-brochure.pdf",
     demoUrl: "https://maqam-eta.vercel.app/portal",
   },
   {
     slug: "rihla",
     icon: "plane",
     image: "/images/products/rihla-catalogue.jpg",
-    pdf: "/docs/rihla.pdf",
+    pdf: "/docs/rihla-brochure.pdf",
     demoUrl: "https://rihla.i-ite.com/",
     featured: true,
-  },
-  {
-    slug: "computer-store",
-    icon: "cpu",
-    image: "/images/products/computer-store.svg",
-    demoUrl: "https://akgpu.itelearning-dz.workers.dev/",
   },
 ];

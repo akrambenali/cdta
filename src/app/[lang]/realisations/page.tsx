@@ -69,9 +69,9 @@ export default async function ProjectsPage({ params }: PageProps<"/[lang]/realis
 
       <section className="py-20">
         <Container>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projectsMeta.map((meta, i) => (
-              <ScrollReveal key={meta.slug} delay={(i % 2) * 80}>
+              <ScrollReveal key={meta.slug} delay={(i % 3) * 80}>
                 <ProjectCard meta={meta} project={dict.projects[meta.slug]} visitLabel={dict.projectsPage.visitSite} />
               </ScrollReveal>
             ))}
