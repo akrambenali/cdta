@@ -19,7 +19,7 @@ export default async function Image({ params }: { params: Promise<{ lang: string
   return renderOgImage({
     title: `${dict.hero.title} ${dict.hero.highlight}`,
     subtitle: dict.meta.tagline,
-    image: "/images/products/sdp.jpg",
+    image: "/images/products/sdp-catalogue.jpg",
     rtl: lang === "ar",
   });
 }

@@ -44,18 +44,18 @@ interface ProductMeta {
 }
 
 export const productsMeta: ProductMeta[] = [
-  { slug: "sdp", icon: "network", image: "/images/products/sdp.jpg", pdf: "/docs/sdp.pdf", featured: true },
-  { slug: "keswa", icon: "shirt", image: "/images/products/keswa.jpg", pdf: "/docs/keswa.pdf", featured: true },
-  { slug: "bouchli", icon: "beef", image: "/images/products/bouchli.jpg", pdf: "/docs/bouchli.pdf" },
+  { slug: "sdp", icon: "network", image: "/images/products/sdp-catalogue.jpg", pdf: "/docs/sdp.pdf", featured: true },
+  { slug: "keswa", icon: "shirt", image: "/images/products/keswa-catalogue.jpg", pdf: "/docs/keswa.pdf", featured: true },
+  { slug: "bouchli", icon: "beef", image: "/images/products/bouchli-catalogue.jpg", pdf: "/docs/bouchli.pdf" },
   { slug: "qr-chief", icon: "qr-code", image: "/images/products/qr-chief.jpg", pdf: "/docs/qr-chief.pdf" },
   {
     slug: "tapsit-school",
     icon: "graduation-cap",
-    image: "/images/products/tapsit-school.jpg",
+    image: "/images/products/tapsit-school-catalogue.jpg",
     pdf: "/docs/tapsit-school.pdf",
     featured: true,
   },
-  { slug: "vola", icon: "car", image: "/images/products/vola.svg" },
+  { slug: "vola", icon: "car", image: "/images/products/vola-catalogue.jpg" },
   {
     slug: "maqam",
     icon: "hotel",

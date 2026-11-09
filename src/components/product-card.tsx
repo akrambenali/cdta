@@ -29,7 +29,7 @@ export function ProductCard({
 }) {
   return (
     <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-brand-900/8 bg-white shadow-sm shadow-black/[0.03] transition-colors duration-300 hover:border-accent-200">
-      <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-brand-50">
+      <div className="relative aspect-[3/2] w-full shrink-0 overflow-hidden bg-brand-50">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={image}
